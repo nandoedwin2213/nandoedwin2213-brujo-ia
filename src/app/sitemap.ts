@@ -5,7 +5,7 @@ import { getBaseUrl, getI18nPath } from '@/utils/Helpers';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
 
-  const routes = [''];
+  const routes = ['', '/pricing'];
 
   return routes.map(route => ({
     url: `${baseUrl}${route}`,

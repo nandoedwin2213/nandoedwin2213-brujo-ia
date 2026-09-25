@@ -5,15 +5,15 @@ test.describe('Visual testing', () => {
     test('should take screenshot of the homepage', async ({ page }, testInfo) => {
       await page.goto('/');
 
-      await expect(page.getByText('The perfect SaaS template to build')).toBeVisible();
+      await expect(page.getByText('Sin filtros, sin censura, sin excusas')).toBeVisible();
 
       await takeSnapshot(page, testInfo);
     });
 
-    test('should take screenshot of the French homepage', async ({ page }, testInfo) => {
-      await page.goto('/fr');
+    test('should take screenshot of the English homepage', async ({ page }, testInfo) => {
+      await page.goto('/en');
 
-      await expect(page.getByText('Le parfait SaaS template pour construire')).toBeVisible();
+      await expect(page.getByText('No filters, no censorship, no excuses')).toBeVisible();
 
       await takeSnapshot(page, testInfo);
     });

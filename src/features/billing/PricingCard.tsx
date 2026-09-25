@@ -1,6 +1,8 @@
 import type { PricingPlan } from '@/types/Subscription';
 import { useTranslations } from 'next-intl';
-import { PricingFeatureList } from './PricingFeatureList';
+import { PricingFeatureItem } from './PricingFeatureItem';
+
+const FEATURE_KEYS = ['feature_1', 'feature_2', 'feature_3', 'feature_4'] as const;
 
 export const PricingCard = (props: {
   plan: PricingPlan;
@@ -21,7 +23,7 @@ export const PricingCard = (props: {
         </div>
 
         <div className="ml-1 text-muted-foreground">
-          {t('plan_interval_month')}
+          {props.plan.durationDays > 0 ? t('plan_interval_days', { days: props.plan.durationDays }) : t('plan_interval_free')}
         </div>
       </div>
 
@@ -31,8 +33,12 @@ export const PricingCard = (props: {
 
       {props.button}
 
-      <ul className="mt-8 space-y-3">
-        <PricingFeatureList limits={props.plan.limits} />
+      <ul className="mt-8 space-y-3 text-left">
+        {FEATURE_KEYS.map(key => (
+          <PricingFeatureItem key={key}>
+            {tPlans(`${props.plan.name}_${key}`)}
+          </PricingFeatureItem>
+        ))}
       </ul>
     </div>
   );

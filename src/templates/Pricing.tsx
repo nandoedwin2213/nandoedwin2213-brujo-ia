@@ -3,21 +3,21 @@ import { buttonVariants } from '@/components/ui/buttonVariants';
 import { PricingCard } from '@/features/billing/PricingCard';
 import { Section } from '@/features/landing/Section';
 import { Link } from '@/libs/I18nNavigation';
-import { AllPlans } from '@/utils/PricingPlans';
+import { AllPlans, PLAN_NAME } from '@/utils/PricingPlans';
 
 export const Pricing = () => {
   const t = useTranslations('Pricing');
 
   return (
     <Section
+      id="pricing"
       subtitle={t('section_subtitle')}
       title={t('section_title')}
       description={t('section_description')}
     >
       <div className="
-        grid grid-cols-1 gap-x-6 gap-y-8
+        mx-auto grid max-w-3xl grid-cols-1 gap-x-6 gap-y-8
         @xl:grid-cols-2
-        @4xl:grid-cols-3
       "
       >
         {AllPlans.map(plan => (
@@ -28,11 +28,12 @@ export const Pricing = () => {
               <Link
                 className={buttonVariants({
                   size: 'sm',
+                  variant: plan.name === PLAN_NAME.PRO ? 'default' : 'outline',
                   className: 'w-full',
                 })}
-                href="/sign-up"
+                href={plan.name === PLAN_NAME.PRO ? '/dashboard' : '/sign-up'}
               >
-                {t('button_text')}
+                {plan.name === PLAN_NAME.PRO ? t('button_pro') : t('button_free')}
               </Link>
             )}
           />
