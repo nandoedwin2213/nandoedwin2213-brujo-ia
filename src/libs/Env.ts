@@ -8,7 +8,7 @@ export const Env = createEnv({
     PAYPHONE_AUTH_TOKEN: z.string().min(1),
     PAYPHONE_STORE_ID: z.string().optional(),
     VENICE_API_KEY: z.string().min(1),
-    VENICE_MODEL: z.string().min(1).default('llama-3.3-70b'),
+    VENICE_MODEL: z.string().min(1).default('venice-uncensored-1-2'),
     VENICE_IMAGE_MODEL: z.string().min(1).default('lustify-sdxl'),
   },
   client: {
