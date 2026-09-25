@@ -11,7 +11,7 @@ export type PayPhonePrepareInput = {
 };
 
 export type PayPhonePrepareResult = {
-  paymentId: number;
+  paymentId: string;
   payWithCard: string;
   payWithPayPhone: string;
 };
