@@ -43,11 +43,11 @@ export default async function DashboardLayout(props: DashboardLayoutProps) {
                 label: t('home'),
               },
               {
-                href: '/dashboard/organization-profile/organization-members',
-                label: t('members'),
+                href: '/dashboard/billing',
+                label: t('billing'),
               },
               {
-                href: '/dashboard/organization-profile',
+                href: '/dashboard/user-profile',
                 label: t('settings'),
               },
             ]}

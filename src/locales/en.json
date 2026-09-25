@@ -1,122 +1,160 @@
 {
   "Index": {
-    "meta_title": "SaaS Template - The perfect SaaS template to build and scale your business with ease.",
-    "meta_description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS."
+    "meta_title": "Brujo IA - Unrestricted, uncensored AI",
+    "meta_description": "Brujo IA is an AI platform with no restrictions and no censorship: generate text and images with full freedom. Pay locally with PayPhone."
   },
   "Navbar": {
     "sign_in": "Sign in",
     "sign_up": "Sign up",
-    "product": "Product",
+    "product": "Features",
     "pricing": "Pricing",
-    "docs": "Docs",
-    "blog": "Blog",
-    "about": "About"
+    "faq": "FAQ",
+    "dashboard": "Dashboard"
   },
   "LocaleSwitcher": {
     "button_label": "Change language"
   },
   "Hero": {
-    "follow_twitter": "Follow @Ixartz on Twitter",
-    "title": "The perfect <important>SaaS template</important> to build and scale your business with ease.",
-    "description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS.",
-    "primary_button": "Get Next.js SaaS Starter Kit",
-    "secondary_button": "Star on GitHub"
+    "banner": "Uncensored text and image generation",
+    "title": "The <important>AI with no limits</important>. No filters, no censorship, no excuses.",
+    "description": "Brujo IA gives you private access to uncensored AI models to write, create images and explore any idea, without a corporate filter deciding what you can ask. Pay with PayPhone in seconds.",
+    "primary_button": "Create free account",
+    "secondary_button": "See pricing"
   },
   "Features": {
     "section_subtitle": "Features",
-    "section_title": "Unlock the Full Potential of the SaaS Template",
-    "section_description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS.",
-    "feature1_title": "Node.js",
-    "feature2_title": "React",
-    "feature3_title": "Tailwind CSS",
-    "feature4_title": "TypeScript",
-    "feature5_title": "Shadcn UI",
-    "feature6_title": "ESLint",
-    "feature_description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS."
+    "section_title": "Everything an AI should let you do",
+    "section_description": "Powered by Venice.ai's private, uncensored models. Your prompts are not stored or used for training.",
+    "feature1_title": "Uncensored text",
+    "feature1_description": "Write stories, scripts, copy or code without refusals or moralizing. The model answers what you ask.",
+    "feature2_title": "Unrestricted images",
+    "feature2_description": "Generate high-resolution images from any prompt, with no watermark and no content filter.",
+    "feature3_title": "Real privacy",
+    "feature3_description": "Your prompts and results are processed privately and never used to train models.",
+    "feature4_title": "Pay with PayPhone",
+    "feature4_description": "No international cards required. Pay in USD with PayPhone, the local payment gateway.",
+    "feature5_title": "Instant access",
+    "feature5_description": "Your PRO plan activates the moment PayPhone confirms the payment. No waiting.",
+    "feature6_title": "No subscriptions that trap you",
+    "feature6_description": "One payment, 30 days of PRO. Renew whenever you want, nothing charges automatically."
   },
   "Pricing": {
     "section_subtitle": "Pricing",
-    "section_title": "Unlock the Full Potential of the SaaS Template",
-    "section_description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS.",
-    "button_text": "Get started"
+    "section_title": "One price, total freedom",
+    "section_description": "A single PRO plan with everything unlocked. Pay locally with PayPhone.",
+    "button_free": "Create account",
+    "button_pro": "Unlock PRO"
+  },
+  "PricingPage": {
+    "meta_title": "Pricing - Brujo IA",
+    "meta_description": "Unlock Brujo IA PRO for 30 days with a single PayPhone payment."
   },
   "PricingPlans": {
     "free_plan_name": "Free",
-    "premium_plan_name": "Premium",
-    "enterprise_plan_name": "Enterprise"
+    "free_feature_1": "Account and dashboard access",
+    "free_feature_2": "Preview of the generator",
+    "free_feature_3": "Upgrade to PRO whenever you want",
+    "free_feature_4": "Email support",
+    "pro_plan_name": "PRO",
+    "pro_feature_1": "Uncensored text generation",
+    "pro_feature_2": "Unrestricted image generation",
+    "pro_feature_3": "30 days of access, no auto-renewal",
+    "pro_feature_4": "Priority support"
   },
   "PricingCard": {
-    "free_plan_description": "For individuals",
-    "premium_plan_description": "For small teams",
-    "enterprise_plan_description": "For industry leaders",
+    "free_plan_description": "Take a look",
+    "pro_plan_description": "Everything unlocked",
     "plan_price": "${price}",
-    "plan_interval_month": "/ month",
-    "plan_interval_year": "/ year"
+    "plan_interval_days": "/ {days} days",
+    "plan_interval_free": "forever"
   },
-  "PricingFeatures": {
-    "feature_team_member": "Up to {number} team members",
-    "feature_website": "Up to {number} websites",
-    "feature_storage": "{number} GB of storage",
-    "feature_transfer": "{number} TB of transfer",
-    "feature_email_support": "Email support"
-  },
-  "SponsorLogos": {
-    "sponsored_by": "Sponsored by",
-    "clerk_logo": "Clerk logo",
-    "sentry_logo": "Sentry logo",
-    "crowdin_logo": "Crowdin logo",
-    "arcjet_logo": "Arcjet logo",
-    "coderabbit_logo": "CodeRabbit logo",
-    "nextjs_boilerplate_logo": "Next.js SaaS Boilerplate logo"
+  "PayPhoneButton": {
+    "label": "Pay with PayPhone",
+    "loading": "Redirecting to PayPhone...",
+    "error": "We could not start the payment. Please try again."
   },
   "FAQ": {
-    "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam enim dui, id consequat turpis ullamcorper ac. Mauris id quam dolor. Nullam eu egestas turpis. Proin risus elit, sollicitudin in mi a, accumsan euismod turpis. In euismod mi sed diam tristique hendrerit."
+    "question1": "Is Brujo IA really uncensored?",
+    "answer1": "Yes. We use Venice.ai's uncensored models with the safety filters disabled. The model answers what you ask, with no corporate filter in between.",
+    "question2": "How do I pay?",
+    "answer2": "With PayPhone, using your PayPhone balance or any card. The PRO plan costs $19 and lasts 30 days.",
+    "question3": "Does it renew automatically?",
+    "answer3": "No. Nothing is charged automatically. When your 30 days end you decide whether to pay again.",
+    "question4": "Are my prompts stored?",
+    "answer4": "Prompts and results are processed privately and are not used to train any model.",
+    "question5": "What can I generate?",
+    "answer5": "Text of any kind (stories, scripts, code, copy) and high-resolution images from a text prompt.",
+    "question6": "What happens if my payment fails?",
+    "answer6": "Nothing is charged. You can retry from your dashboard or write to us at support."
   },
   "CTA": {
-    "title": "You are ready?",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "button_text": "Get Next.js SaaS Starter Kit"
+    "title": "Ready to talk to an AI without filters?",
+    "description": "Create your account in seconds and unlock PRO with PayPhone.",
+    "button_text": "Get started"
   },
   "Footer": {
-    "product": "Product",
-    "docs": "Docs",
-    "blog": "Blog",
-    "community": "Community",
-    "company": "Company",
+    "product": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "support": "Support",
     "terms_of_service": "Terms Of Service",
     "privacy_policy": "Privacy Policy",
-    "footer_text": "© {year} {name}. Made with <author></author>."
+    "footer_text": "© {year} {name}. All rights reserved."
   },
   "SignIn": {
     "meta_title": "Sign in",
-    "meta_description": "Seamlessly sign in to your account with our user-friendly login process."
+    "meta_description": "Sign in to your Brujo IA account."
   },
   "SignUp": {
     "meta_title": "Sign up",
-    "meta_description": "Effortlessly create an account through our intuitive sign-up process."
+    "meta_description": "Create your Brujo IA account."
   },
   "DashboardLayout": {
-    "meta_title": "SaaS Template Dashboard",
-    "meta_description": "A free and open-source landing page template for your SaaS business, built with Next.js, TypeScript, Shadcn UI, and Tailwind CSS.",
-    "home": "Home",
-    "members": "Members",
+    "meta_title": "Brujo IA Dashboard",
+    "meta_description": "Your private, uncensored AI generator.",
+    "home": "Generator",
+    "billing": "Billing",
     "settings": "Settings"
   },
   "DashboardIndexPage": {
-    "title_bar": "Dashboard",
-    "title_bar_description": "Welcome to your dashboard",
-    "message_state_title": "Let's get started",
-    "message_state_description": "Customize this page by editing the file at <code>dashboard/page.tsx</code>.",
-    "message_state_alternative": "Need advanced features? Next.js 16 & React 19, Multi-tenancy & Teams, Roles & Permissions, Shadcn UI,\nEnd-to-End Typesafety with oRPC, Stripe Payment, Light / Dark mode. Try <url></url>.",
-    "max_message": "Or, need a Self-hosted auth stack (Better Auth)? Try <url></url>."
+    "title_bar": "Generator",
+    "title_bar_description": "Text and images without restrictions, powered by Venice.ai",
+    "paywall_title": "Unlock Brujo IA PRO",
+    "paywall_description": "The generator is available for PRO users. Pay ${price} with PayPhone and get {days} days of unrestricted access.",
+    "paywall_pricing_link": "See plan details",
+    "payment_approved": "Payment approved. Your PRO access is active!",
+    "payment_cancelled": "Payment cancelled. Nothing was charged.",
+    "payment_rejected": "PayPhone rejected the payment. Nothing was charged.",
+    "payment_error": "We could not confirm the payment. If you were charged, contact support."
+  },
+  "Generator": {
+    "tab_text": "Text",
+    "tab_image": "Image",
+    "prompt_label": "Your prompt",
+    "prompt_placeholder_text": "Write anything: a story, a script, code, an uncomfortable question...",
+    "prompt_placeholder_image": "Describe the image you want to create...",
+    "generate": "Generate",
+    "generating": "Generating...",
+    "result_title": "Result",
+    "result_empty": "Your result will appear here.",
+    "error_pro_required": "You need an active PRO plan to generate.",
+    "error_generic": "Generation failed. Please try again."
+  },
+  "BillingPage": {
+    "title_bar": "Billing",
+    "title_bar_description": "Your PRO plan and PayPhone payments",
+    "status_pro": "PRO plan active",
+    "status_free": "Free plan",
+    "pro_until": "Your PRO access is valid until {date}. Paying again adds 30 more days.",
+    "upgrade_hint": "Pay ${price} with PayPhone to unlock {days} days of PRO.",
+    "history_title": "Payment history",
+    "history_empty": "No payments yet.",
+    "col_date": "Date",
+    "col_amount": "Amount",
+    "col_status": "Status"
   },
   "UserProfilePage": {
     "title_bar": "User Profile",
     "title_bar_description": "View and manage your user profile"
-  },
-  "OrganizationProfilePage": {
-    "title_bar": "Organization Management",
-    "title_bar_description": "Manage your organization"
   }
 }

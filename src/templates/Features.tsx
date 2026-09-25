@@ -9,6 +9,7 @@ export const Features = () => {
   return (
     <Background>
       <Section
+        id="features"
         subtitle={t('section_subtitle')}
         title={t('section_title')}
         description={t('section_description')}
@@ -34,7 +35,7 @@ export const Features = () => {
             )}
             title={t('feature1_title')}
           >
-            {t('feature_description')}
+            {t('feature1_description')}
           </FeatureCard>
 
           <FeatureCard
@@ -53,7 +54,7 @@ export const Features = () => {
             )}
             title={t('feature2_title')}
           >
-            {t('feature_description')}
+            {t('feature2_description')}
           </FeatureCard>
 
           <FeatureCard
@@ -72,7 +73,7 @@ export const Features = () => {
             )}
             title={t('feature3_title')}
           >
-            {t('feature_description')}
+            {t('feature3_description')}
           </FeatureCard>
 
           <FeatureCard
@@ -91,7 +92,7 @@ export const Features = () => {
             )}
             title={t('feature4_title')}
           >
-            {t('feature_description')}
+            {t('feature4_description')}
           </FeatureCard>
 
           <FeatureCard
@@ -110,7 +111,7 @@ export const Features = () => {
             )}
             title={t('feature5_title')}
           >
-            {t('feature_description')}
+            {t('feature5_description')}
           </FeatureCard>
 
           <FeatureCard
@@ -129,7 +130,7 @@ export const Features = () => {
             )}
             title={t('feature6_title')}
           >
-            {t('feature_description')}
+            {t('feature6_description')}
           </FeatureCard>
         </div>
       </Section>

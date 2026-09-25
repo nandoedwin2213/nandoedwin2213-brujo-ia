@@ -84,23 +84,19 @@ export const Footer = () => {
         )}
       >
         <li>
-          <Link href="/sign-up">{t('product')}</Link>
+          <Link href="/#features">{t('product')}</Link>
         </li>
 
         <li>
-          <Link href="/sign-up">{t('docs')}</Link>
+          <Link href="/pricing">{t('pricing')}</Link>
         </li>
 
         <li>
-          <Link href="/sign-up">{t('blog')}</Link>
+          <Link href="/#faq">{t('faq')}</Link>
         </li>
 
         <li>
-          <Link href="/sign-up">{t('community')}</Link>
-        </li>
-
-        <li>
-          <Link href="/sign-up">{t('company')}</Link>
+          <a href={`mailto:${AppConfig.email.support}`}>{t('support')}</a>
         </li>
       </CenteredFooter>
     </Section>

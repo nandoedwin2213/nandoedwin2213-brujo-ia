@@ -1,0 +1,160 @@
+{
+  "Index": {
+    "meta_title": "Brujo IA - Inteligencia artificial sin restricciones ni censura",
+    "meta_description": "Brujo IA es una plataforma de IA sin restricciones ni censura: genera texto e imágenes con total libertad. Paga localmente con PayPhone."
+  },
+  "Navbar": {
+    "sign_in": "Iniciar sesión",
+    "sign_up": "Registrarse",
+    "product": "Funciones",
+    "pricing": "Precios",
+    "faq": "Preguntas",
+    "dashboard": "Panel"
+  },
+  "LocaleSwitcher": {
+    "button_label": "Cambiar idioma"
+  },
+  "Hero": {
+    "banner": "Generación de texto e imágenes sin censura",
+    "title": "La <important>IA sin límites</important>. Sin filtros, sin censura, sin excusas.",
+    "description": "Brujo IA te da acceso privado a modelos de IA sin censura para escribir, crear imágenes y explorar cualquier idea, sin que un filtro corporativo decida qué puedes preguntar. Paga con PayPhone en segundos.",
+    "primary_button": "Crear cuenta gratis",
+    "secondary_button": "Ver precios"
+  },
+  "Features": {
+    "section_subtitle": "Funciones",
+    "section_title": "Todo lo que una IA debería dejarte hacer",
+    "section_description": "Impulsado por los modelos privados y sin censura de Venice.ai. Tus prompts no se almacenan ni se usan para entrenar.",
+    "feature1_title": "Texto sin censura",
+    "feature1_description": "Escribe historias, guiones, copys o código sin negativas ni sermones. El modelo responde lo que le pides.",
+    "feature2_title": "Imágenes sin restricciones",
+    "feature2_description": "Genera imágenes en alta resolución a partir de cualquier prompt, sin marca de agua ni filtro de contenido.",
+    "feature3_title": "Privacidad real",
+    "feature3_description": "Tus prompts y resultados se procesan de forma privada y nunca se usan para entrenar modelos.",
+    "feature4_title": "Paga con PayPhone",
+    "feature4_description": "No necesitas tarjetas internacionales. Paga en USD con PayPhone, la pasarela de pagos local.",
+    "feature5_title": "Acceso inmediato",
+    "feature5_description": "Tu plan PRO se activa en el instante en que PayPhone confirma el pago. Sin esperas.",
+    "feature6_title": "Sin suscripciones que te atrapen",
+    "feature6_description": "Un pago, 30 días de PRO. Renueva cuando quieras, nada se cobra automáticamente."
+  },
+  "Pricing": {
+    "section_subtitle": "Precios",
+    "section_title": "Un precio, libertad total",
+    "section_description": "Un único plan PRO con todo desbloqueado. Paga localmente con PayPhone.",
+    "button_free": "Crear cuenta",
+    "button_pro": "Desbloquear PRO"
+  },
+  "PricingPage": {
+    "meta_title": "Precios - Brujo IA",
+    "meta_description": "Desbloquea Brujo IA PRO por 30 días con un solo pago en PayPhone."
+  },
+  "PricingPlans": {
+    "free_plan_name": "Gratis",
+    "free_feature_1": "Cuenta y acceso al panel",
+    "free_feature_2": "Vista previa del generador",
+    "free_feature_3": "Pasa a PRO cuando quieras",
+    "free_feature_4": "Soporte por correo",
+    "pro_plan_name": "PRO",
+    "pro_feature_1": "Generación de texto sin censura",
+    "pro_feature_2": "Generación de imágenes sin restricciones",
+    "pro_feature_3": "30 días de acceso, sin renovación automática",
+    "pro_feature_4": "Soporte prioritario"
+  },
+  "PricingCard": {
+    "free_plan_description": "Para curiosear",
+    "pro_plan_description": "Todo desbloqueado",
+    "plan_price": "${price}",
+    "plan_interval_days": "/ {days} días",
+    "plan_interval_free": "para siempre"
+  },
+  "PayPhoneButton": {
+    "label": "Pagar con PayPhone",
+    "loading": "Redirigiendo a PayPhone...",
+    "error": "No pudimos iniciar el pago. Inténtalo de nuevo."
+  },
+  "FAQ": {
+    "question1": "¿Brujo IA realmente no tiene censura?",
+    "answer1": "Sí. Usamos los modelos sin censura de Venice.ai con los filtros de seguridad desactivados. El modelo responde lo que le pides, sin un filtro corporativo en medio.",
+    "question2": "¿Cómo pago?",
+    "answer2": "Con PayPhone, usando tu saldo PayPhone o cualquier tarjeta. El plan PRO cuesta $19 y dura 30 días.",
+    "question3": "¿Se renueva automáticamente?",
+    "answer3": "No. Nada se cobra automáticamente. Cuando terminen tus 30 días, tú decides si vuelves a pagar.",
+    "question4": "¿Se guardan mis prompts?",
+    "answer4": "Los prompts y resultados se procesan de forma privada y no se usan para entrenar ningún modelo.",
+    "question5": "¿Qué puedo generar?",
+    "answer5": "Texto de cualquier tipo (historias, guiones, código, copys) e imágenes en alta resolución a partir de una descripción.",
+    "question6": "¿Qué pasa si mi pago falla?",
+    "answer6": "No se cobra nada. Puedes reintentar desde tu panel o escribirnos a soporte."
+  },
+  "CTA": {
+    "title": "¿Listo para hablar con una IA sin filtros?",
+    "description": "Crea tu cuenta en segundos y desbloquea PRO con PayPhone.",
+    "button_text": "Empezar ahora"
+  },
+  "Footer": {
+    "product": "Funciones",
+    "pricing": "Precios",
+    "faq": "Preguntas",
+    "support": "Soporte",
+    "terms_of_service": "Términos de servicio",
+    "privacy_policy": "Política de privacidad",
+    "footer_text": "© {year} {name}. Todos los derechos reservados."
+  },
+  "SignIn": {
+    "meta_title": "Iniciar sesión",
+    "meta_description": "Inicia sesión en tu cuenta de Brujo IA."
+  },
+  "SignUp": {
+    "meta_title": "Registrarse",
+    "meta_description": "Crea tu cuenta de Brujo IA."
+  },
+  "DashboardLayout": {
+    "meta_title": "Panel de Brujo IA",
+    "meta_description": "Tu generador de IA privado y sin censura.",
+    "home": "Generador",
+    "billing": "Pagos",
+    "settings": "Ajustes"
+  },
+  "DashboardIndexPage": {
+    "title_bar": "Generador",
+    "title_bar_description": "Texto e imágenes sin restricciones, con la potencia de Venice.ai",
+    "paywall_title": "Desbloquea Brujo IA PRO",
+    "paywall_description": "El generador está disponible para usuarios PRO. Paga ${price} con PayPhone y obtén {days} días de acceso sin restricciones.",
+    "paywall_pricing_link": "Ver detalles del plan",
+    "payment_approved": "Pago aprobado. ¡Tu acceso PRO está activo!",
+    "payment_cancelled": "Pago cancelado. No se cobró nada.",
+    "payment_rejected": "PayPhone rechazó el pago. No se cobró nada.",
+    "payment_error": "No pudimos confirmar el pago. Si se te cobró, contacta a soporte."
+  },
+  "Generator": {
+    "tab_text": "Texto",
+    "tab_image": "Imagen",
+    "prompt_label": "Tu prompt",
+    "prompt_placeholder_text": "Escribe lo que quieras: una historia, un guion, código, una pregunta incómoda...",
+    "prompt_placeholder_image": "Describe la imagen que quieres crear...",
+    "generate": "Generar",
+    "generating": "Generando...",
+    "result_title": "Resultado",
+    "result_empty": "Tu resultado aparecerá aquí.",
+    "error_pro_required": "Necesitas un plan PRO activo para generar.",
+    "error_generic": "La generación falló. Inténtalo de nuevo."
+  },
+  "BillingPage": {
+    "title_bar": "Pagos",
+    "title_bar_description": "Tu plan PRO y tus pagos con PayPhone",
+    "status_pro": "Plan PRO activo",
+    "status_free": "Plan gratis",
+    "pro_until": "Tu acceso PRO es válido hasta el {date}. Volver a pagar suma 30 días más.",
+    "upgrade_hint": "Paga ${price} con PayPhone para desbloquear {days} días de PRO.",
+    "history_title": "Historial de pagos",
+    "history_empty": "Aún no hay pagos.",
+    "col_date": "Fecha",
+    "col_amount": "Monto",
+    "col_status": "Estado"
+  },
+  "UserProfilePage": {
+    "title_bar": "Perfil de usuario",
+    "title_bar_description": "Consulta y gestiona tu perfil"
+  }
+}
