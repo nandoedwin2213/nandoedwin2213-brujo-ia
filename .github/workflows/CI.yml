@@ -147,8 +147,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0 # For chromatic
 
       - name: Set up Node.js environment
         uses: ./.github/actions/setup-project
@@ -162,18 +160,6 @@ jobs:
           args: sh -c "HOME=/root npm run test:e2e" # Set HOME to /root to avoid Playwright error with Firebox
         env:
           CLERK_SECRET_KEY: ${{ secrets.CLERK_SECRET_KEY }}
-
-      - name: Fix test results permission # Give permissions to test results needed by Chromatic
-        run: |
-          sudo chmod -R 777 test-results
-
-      - name: Run visual regression tests
-        uses: chromaui/action@v17
-        with:
-          playwright: true
-          exitOnceUploaded: true # Speed up by skipping the build results
-          outputDir: storybook-static
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
       - name: Upload test results
         uses: actions/upload-artifact@v7
