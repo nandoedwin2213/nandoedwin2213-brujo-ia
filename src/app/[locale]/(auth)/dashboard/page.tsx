@@ -3,14 +3,13 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import { buttonVariants } from '@/components/ui/buttonVariants';
 import { PayPhoneButton } from '@/features/billing/PayPhoneButton';
-import { PageMessage } from '@/features/dashboard/PageMessage';
 import { TitleBar } from '@/features/dashboard/TitleBar';
 import { GeneratorForm } from '@/features/generator/GeneratorForm';
 import { Link } from '@/libs/I18nNavigation';
 import { getUserSubscription } from '@/libs/Subscription';
 import { getUsageSummary } from '@/libs/Usage';
 import { cn } from '@/utils/Helpers';
-import { ProPlan } from '@/utils/PricingPlans';
+import { PlanLimitsByName, PremiumPlan, VipPlan } from '@/utils/PricingPlans';
 
 const paymentOutcomes = ['approved', 'cancelled', 'rejected', 'error'] as const;
 type PaymentOutcome = (typeof paymentOutcomes)[number];
@@ -37,6 +36,7 @@ export default async function DashboardIndexPage(props: {
   }
 
   const subscription = await getUserSubscription(userId);
+  const usage = await getUsageSummary(userId, subscription.plan);
   const outcome = isPaymentOutcome(payment) ? payment : null;
 
   return (
@@ -60,38 +60,36 @@ export default async function DashboardIndexPage(props: {
         </div>
       )}
 
-      {subscription.isPro
-        ? (
-            <GeneratorForm usage={await getUsageSummary(userId)} />
-          )
-        : (
-            <PageMessage
-              icon={(
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M0 0h24v24H0z" stroke="none" />
-                  <rect x="5" y="11" width="14" height="10" rx="2" />
-                  <circle cx="12" cy="16" r="1" />
-                  <path d="M8 11V7a4 4 0 018 0v4" />
-                </svg>
-              )}
-              title={t('paywall_title')}
-              description={t('paywall_description', { price: ProPlan.price, days: ProPlan.durationDays })}
-              button={(
-                <div className="flex flex-col items-center gap-3">
-                  <PayPhoneButton className="w-64" />
-                  <Link href="/pricing" className={buttonVariants({ variant: 'link', size: 'sm' })}>
-                    {t('paywall_pricing_link')}
-                  </Link>
-                </div>
-              )}
-            />
-          )}
+      {!subscription.isPaid && (
+        <div className="
+          mb-6 rounded-xl border border-primary/40 bg-primary/5 p-5
+        "
+        >
+          <div className="text-lg font-semibold">{t('free_banner_title')}</div>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {t('free_banner_description', {
+              images: PlanLimitsByName.free.images,
+              premiumPrice: PremiumPlan.price,
+              premiumImages: PlanLimitsByName.premium.images,
+              vipPrice: VipPlan.price,
+              vipImages: PlanLimitsByName.vip.images,
+            })}
+          </p>
+          <div className="
+            mt-4 flex flex-col gap-3
+            sm:flex-row
+          "
+          >
+            <PayPhoneButton plan="premium" className="sm:w-64" />
+            <PayPhoneButton plan="vip" variant="outline" className="sm:w-64" />
+            <Link href="/pricing" className={buttonVariants({ variant: 'link', size: 'sm' })}>
+              {t('paywall_pricing_link')}
+            </Link>
+          </div>
+        </div>
+      )}
+
+      <GeneratorForm usage={usage} />
     </>
   );
 };

@@ -40,6 +40,7 @@ const UsageBar = (props: { label: string; used: number; limit: number }) => {
 
 export const GeneratorForm = (props: { usage: UsageSummary }) => {
   const t = useTranslations('Generator');
+  const tPlans = useTranslations('PricingPlans');
   const [usage, setUsage] = useState(props.usage);
   const [type, setType] = useState<GenerationType>('text');
   const [prompt, setPrompt] = useState('');
@@ -69,7 +70,11 @@ export const GeneratorForm = (props: { usage: UsageSummary }) => {
         if (res.status === 429) {
           setError(t('error_rate_limit'));
         } else if (res.status === 402) {
-          setError(data.error === 'quota' ? t('error_quota') : t('error_pro_required'));
+          if (data.error === 'quota') {
+            setError(usage.resetsMonthly ? t('error_quota') : t('error_quota_free'));
+          } else {
+            setError(t('error_pro_required'));
+          }
         } else {
           setError(t('error_generic'));
         }
@@ -137,9 +142,12 @@ export const GeneratorForm = (props: { usage: UsageSummary }) => {
         {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
 
         <div className="mt-5 grid gap-3 border-t border-border pt-4">
-          <UsageBar label={t('usage_images')} used={usage.imagesUsed} limit={usage.imagesLimit} />
-          <UsageBar label={t('usage_tokens')} used={usage.tokensUsed} limit={usage.tokensLimit} />
-          <p className="text-xs text-muted-foreground">{t('usage_note')}</p>
+          <div className="text-xs font-semibold text-muted-foreground uppercase">
+            {t('usage_plan', { plan: tPlans(`${usage.plan}_plan_name`) })}
+          </div>
+          <UsageBar label={usage.resetsMonthly ? t('usage_images') : t('usage_images_free')} used={usage.imagesUsed} limit={usage.imagesLimit} />
+          <UsageBar label={usage.resetsMonthly ? t('usage_tokens') : t('usage_tokens_free')} used={usage.tokensUsed} limit={usage.tokensLimit} />
+          <p className="text-xs text-muted-foreground">{usage.resetsMonthly ? t('usage_note') : t('usage_note_free')}</p>
         </div>
       </form>
 

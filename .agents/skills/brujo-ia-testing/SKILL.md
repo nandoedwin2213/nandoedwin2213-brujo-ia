@@ -40,7 +40,7 @@ not supplied by the payment account owner. Models may be configured through
   real checkout. Never enter card details. Provider X/Cancel returns to
   dashboard with `payment=cancelled`; verify the DB row becomes CANCELLED.
 - Only when explicitly authorized, simulate PRO by upserting `subscriptions`
-  for the actual Clerk user ID with `is_pro=true` and future `pro_until`.
+  for the actual Clerk user ID with `is_pro=true`, `plan='premium'` (or `'vip'`) and future `pro_until`; free users get a small lifetime trial quota.
   Distinguish this from real approved-payment confirmation.
 - Use harmless prompts through text/image tabs, assert visible outputs;
   read image naturalWidth/naturalHeight for 1024x1024 verification.

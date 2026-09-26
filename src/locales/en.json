@@ -51,8 +51,8 @@
     "section_description": "No international cards, no setup. Sign up, pay with PayPhone and start generating.",
     "step1_title": "Create your account",
     "step1_description": "Sign up with your email or Google. It's free and takes 30 seconds.",
-    "step2_title": "Activate PRO with PayPhone",
-    "step2_description": "Click “Pay with PayPhone” in the dashboard, pay $19 from your app and come back. Your plan is active instantly for 30 days.",
+    "step2_title": "Try it free or activate a plan",
+    "step2_description": "New accounts include a free trial (3 images and 10 texts). When you want more, pay Premium ($19) or VIP ($39) with PayPhone and your plan is active instantly for 30 days.",
     "step3_title": "Pick Text or Image",
     "step3_description": "In the dashboard choose the Text tab to write or the Image tab to generate high-resolution art.",
     "step4_title": "Type your prompt and generate",
@@ -61,7 +61,7 @@
     "tip1": "Be specific: mention tone, length, characters and context (“short message, playful tone, for my wife”).",
     "tip2": "For images describe style, lighting and framing (“realistic photo, warm light, close-up”).",
     "tip3": "Not convinced? Ask for concrete changes in a new prompt: “more explicit”, “shorter”, “in verse”.",
-    "tip4": "Your plan includes 500 images and 2 million text tokens per month: enough for heavy daily use."
+    "tip4": "Premium includes 500 images and 2 million tokens per month; VIP triples the quota (1,500 images and 6 million tokens)."
   },
   "Features": {
     "section_subtitle": "Features",
@@ -76,42 +76,50 @@
     "feature4_title": "Pay with PayPhone",
     "feature4_description": "No international cards required. Pay in USD with PayPhone, the local payment gateway.",
     "feature5_title": "Instant access",
-    "feature5_description": "Your PRO plan activates the moment PayPhone confirms the payment. No waiting.",
+    "feature5_description": "Your plan activates the moment PayPhone confirms the payment. No waiting.",
     "feature6_title": "No subscriptions that trap you",
-    "feature6_description": "One payment, 30 days of PRO. Renew whenever you want, nothing charges automatically."
+    "feature6_description": "One payment, 30 days of access. Renew whenever you want, nothing charges automatically."
   },
   "Pricing": {
     "section_subtitle": "Pricing",
-    "section_title": "One price, total freedom",
-    "section_description": "A single PRO plan with everything unlocked. Pay locally with PayPhone.",
-    "button_free": "Create account",
-    "button_pro": "Unlock PRO"
+    "section_title": "Start free, grow when you want",
+    "section_description": "Try it without paying. Once you're hooked, pick Premium or VIP and pay locally with PayPhone.",
+    "button_free": "Create free account",
+    "button_premium": "Get Premium",
+    "button_vip": "Get VIP"
   },
   "PricingPage": {
     "meta_title": "Pricing - Brujo IA",
-    "meta_description": "Unlock Brujo IA PRO for 30 days with a single PayPhone payment."
+    "meta_description": "Try Brujo IA free and unlock Premium or VIP for 30 days with a single PayPhone payment."
   },
   "PricingPlans": {
     "free_plan_name": "Free",
-    "free_feature_1": "Account and dashboard access",
-    "free_feature_2": "Preview of the generator",
-    "free_feature_3": "Upgrade to PRO whenever you want",
-    "free_feature_4": "Email support",
-    "pro_plan_name": "PRO",
-    "pro_feature_1": "Uncensored text generation",
-    "pro_feature_2": "Unrestricted image generation",
-    "pro_feature_3": "30 days of access, no auto-renewal",
-    "pro_feature_4": "Priority support"
+    "free_feature_1": "3 trial images",
+    "free_feature_2": "10 trial texts (20k tokens)",
+    "free_feature_3": "Uncensored from the first prompt",
+    "free_feature_4": "No card, once per account",
+    "premium_plan_name": "Premium",
+    "premium_feature_1": "500 images per month",
+    "premium_feature_2": "2 million text tokens per month",
+    "premium_feature_3": "30 days of access, no auto-renewal",
+    "premium_feature_4": "Up to 10 images per minute",
+    "vip_plan_name": "VIP",
+    "vip_feature_1": "1,500 images per month",
+    "vip_feature_2": "6 million text tokens per month",
+    "vip_feature_3": "Up to 20 images per minute and priority queue",
+    "vip_feature_4": "Early access to new features (character chat, image editing, voice)"
   },
   "PricingCard": {
-    "free_plan_description": "Take a look",
-    "pro_plan_description": "Everything unlocked",
+    "free_plan_description": "Try with no commitment",
+    "premium_plan_description": "For daily use",
+    "vip_plan_description": "For heavy users",
+    "most_popular": "Most popular",
     "plan_price": "${price}",
     "plan_interval_days": "/ {days} days",
     "plan_interval_free": "forever"
   },
   "PayPhoneButton": {
-    "label": "Pay with PayPhone",
+    "label": "{plan} · ${price} with PayPhone",
     "loading": "Redirecting to PayPhone...",
     "error": "We could not start the payment. Please try again."
   },
@@ -119,7 +127,7 @@
     "question1": "Is Brujo IA really uncensored?",
     "answer1": "Yes. We use Venice.ai's uncensored models with the safety filters disabled. The model answers what you ask, with no corporate filter in between.",
     "question2": "How do I pay?",
-    "answer2": "With PayPhone, using your PayPhone balance or any card. The PRO plan costs $19 and lasts 30 days.",
+    "answer2": "With PayPhone, using your PayPhone balance or any card. Premium costs $19 and VIP $39; both last 30 days. You can try it free first.",
     "question3": "Does it renew automatically?",
     "answer3": "No. Nothing is charged automatically. When your 30 days end you decide whether to pay again.",
     "question4": "Are my prompts stored?",
@@ -131,7 +139,7 @@
   },
   "CTA": {
     "title": "Ready to talk to an AI without filters?",
-    "description": "Create your account in seconds and unlock PRO with PayPhone.",
+    "description": "Create your free account, try it and unlock Premium or VIP with PayPhone.",
     "button_text": "Get started"
   },
   "Footer": {
@@ -161,13 +169,13 @@
   "DashboardIndexPage": {
     "title_bar": "Generator",
     "title_bar_description": "Text and images without restrictions, powered by Venice.ai",
-    "paywall_title": "Unlock Brujo IA PRO",
-    "paywall_description": "The generator is available for PRO users. Pay ${price} with PayPhone and get {days} days of unrestricted access.",
-    "paywall_pricing_link": "See plan details",
-    "payment_approved": "Payment approved. Your PRO access is active!",
+    "paywall_pricing_link": "Compare plans",
+    "payment_approved": "Payment approved. Your plan is active!",
     "payment_cancelled": "Payment cancelled. Nothing was charged.",
     "payment_rejected": "PayPhone rejected the payment. Nothing was charged.",
-    "payment_error": "We could not confirm the payment. If you were charged, contact support."
+    "payment_error": "We could not confirm the payment. If you were charged, contact support.",
+    "free_banner_title": "You're on the free trial",
+    "free_banner_description": "You have {images} trial images and 10 trial texts. Upgrade to Premium (${premiumPrice}: {premiumImages} images/month) or VIP (${vipPrice}: {vipImages} images/month) to keep creating without trial limits."
   },
   "Generator": {
     "tab_text": "Text",
@@ -179,26 +187,31 @@
     "generating": "Generating...",
     "result_title": "Result",
     "result_empty": "Your result will appear here.",
-    "error_pro_required": "You need an active PRO plan to generate.",
+    "error_pro_required": "You need an active plan to generate.",
     "error_generic": "Generation failed. Please try again.",
     "error_quota": "You've used up your monthly quota. It resets on the 1st of each month.",
     "error_rate_limit": "Too fast. Wait a minute and try again.",
     "usage_images": "Images this month",
     "usage_tokens": "Text tokens this month",
-    "usage_note": "Quota resets on the 1st of each month."
+    "usage_note": "Quota resets on the 1st of each month.",
+    "error_quota_free": "Your free trial is used up. Activate Premium or VIP to keep generating.",
+    "usage_plan": "{plan} plan",
+    "usage_images_free": "Trial images",
+    "usage_tokens_free": "Trial tokens",
+    "usage_note_free": "The free trial does not renew. With Premium or VIP the quota resets every month."
   },
   "BillingPage": {
     "title_bar": "Billing",
-    "title_bar_description": "Your PRO plan and PayPhone payments",
-    "status_pro": "PRO plan active",
-    "status_free": "Free plan",
-    "pro_until": "Your PRO access is valid until {date}. Paying again adds 30 more days.",
-    "upgrade_hint": "Pay ${price} with PayPhone to unlock {days} days of PRO.",
+    "title_bar_description": "Your plan and PayPhone payments",
+    "upgrade_hint": "Pay Premium (${premiumPrice}) or VIP (${vipPrice}) with PayPhone and get {days} days of access.",
     "history_title": "Payment history",
     "history_empty": "No payments yet.",
     "col_date": "Date",
     "col_amount": "Amount",
-    "col_status": "Status"
+    "col_status": "Status",
+    "status_plan": "{plan} plan",
+    "paid_until": "Your plan is valid until {date}. Paying again adds 30 more days.",
+    "col_plan": "Plan"
   },
   "UserProfilePage": {
     "title_bar": "User Profile",

@@ -4,9 +4,10 @@ import { NextResponse } from 'next/server';
 import { db } from '@/libs/DB';
 import { logger } from '@/libs/Logger';
 import { confirmPayment } from '@/libs/PayPhone';
-import { grantPro } from '@/libs/Subscription';
+import { grantPlan } from '@/libs/Subscription';
 import { paymentSchema } from '@/models/Schema';
 import { getBaseUrl } from '@/utils/Helpers';
+import { isPaidPlan } from '@/utils/PricingPlans';
 
 type PaymentOutcome = 'approved' | 'cancelled' | 'rejected' | 'error';
 
@@ -65,7 +66,7 @@ export async function GET(request: NextRequest) {
       return redirectToDashboard(result.transactionStatus === 'Canceled' ? 'cancelled' : 'rejected');
     }
 
-    await grantPro(payment.userId);
+    await grantPlan(payment.userId, isPaidPlan(payment.plan) ? payment.plan : 'premium');
 
     return redirectToDashboard('approved');
   } catch (error) {
