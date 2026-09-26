@@ -84,7 +84,6 @@
     "@vitest/browser-playwright": "^4.1.9",
     "@vitest/coverage-v8": "^4.1.9",
     "babel-plugin-react-compiler": "^1.0.0",
-    "checkly": "^8.23.2",
     "cross-env": "^10.1.0",
     "dotenv-cli": "^11.0.0",
     "drizzle-kit": "^0.31.11",
