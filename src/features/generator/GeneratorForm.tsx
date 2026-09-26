@@ -62,6 +62,7 @@ export const GeneratorForm = (props: { usage: UsageSummary }) => {
       });
       const data: ApiResponse = await res.json();
 
+      const nextUsage = data.usage ?? usage;
       if (data.usage) {
         setUsage(data.usage);
       }
@@ -71,7 +72,7 @@ export const GeneratorForm = (props: { usage: UsageSummary }) => {
           setError(t('error_rate_limit'));
         } else if (res.status === 402) {
           if (data.error === 'quota') {
-            setError(usage.resetsMonthly ? t('error_quota') : t('error_quota_free'));
+            setError(nextUsage.resetsMonthly ? t('error_quota') : t('error_quota_free'));
           } else {
             setError(t('error_pro_required'));
           }

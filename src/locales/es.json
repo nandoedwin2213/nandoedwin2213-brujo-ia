@@ -95,7 +95,7 @@
   "PricingPlans": {
     "free_plan_name": "Gratis",
     "free_feature_1": "3 imágenes de prueba",
-    "free_feature_2": "10 textos de prueba (20k tokens)",
+    "free_feature_2": "~10 textos de prueba (20.000 tokens)",
     "free_feature_3": "Sin censura desde el primer prompt",
     "free_feature_4": "Sin tarjeta, una sola vez por cuenta",
     "premium_plan_name": "Premium",
@@ -175,7 +175,7 @@
     "payment_rejected": "PayPhone rechazó el pago. No se cobró nada.",
     "payment_error": "No pudimos confirmar el pago. Si se te cobró, contacta a soporte.",
     "free_banner_title": "Estás en la prueba gratis",
-    "free_banner_description": "Tienes {images} imágenes y 10 textos de prueba. Pasa a Premium (${premiumPrice}: {premiumImages} imágenes/mes) o VIP (${vipPrice}: {vipImages} imágenes/mes) para seguir creando sin límites de prueba."
+    "free_banner_description": "Tienes {images} imágenes y unos 10 textos de prueba (20.000 tokens). Pasa a Premium (${premiumPrice}: {premiumImages} imágenes/mes) o VIP (${vipPrice}: {vipImages} imágenes/mes) para seguir creando sin límites de prueba."
   },
   "Generator": {
     "tab_text": "Texto",
