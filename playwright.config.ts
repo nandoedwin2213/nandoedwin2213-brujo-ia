@@ -50,6 +50,7 @@ export default defineConfig<ChromaticConfig>({
     // Use baseURL so to make navigations relative.
     // More information: https://playwright.dev/docs/api/class-testoptions#test-options-base-url
     baseURL,
+    locale: 'es-EC',
 
     // Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer
     trace: process.env.CI ? 'on' : 'retain-on-failure',
