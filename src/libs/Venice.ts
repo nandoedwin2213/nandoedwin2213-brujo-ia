@@ -7,7 +7,9 @@ const headers = () => ({
   'Authorization': `Bearer ${Env.VENICE_API_KEY}`,
 });
 
-export const generateText = async (prompt: string): Promise<string> => {
+export type TextGeneration = { content: string; tokens: number };
+
+export const generateText = async (prompt: string): Promise<TextGeneration> => {
   const res = await fetch(`${VENICE_API}/chat/completions`, {
     method: 'POST',
     headers: headers(),
@@ -22,14 +24,17 @@ export const generateText = async (prompt: string): Promise<string> => {
     throw new Error(`Venice chat failed (${res.status}): ${await res.text()}`);
   }
 
-  const data: { choices?: { message?: { content?: string } }[] } = await res.json();
+  const data: {
+    choices?: { message?: { content?: string } }[];
+    usage?: { total_tokens?: number };
+  } = await res.json();
   const content = data.choices?.[0]?.message?.content;
 
   if (!content) {
     throw new Error('Venice returned an empty response');
   }
 
-  return content;
+  return { content, tokens: data.usage?.total_tokens ?? 0 };
 };
 
 /** Returns a PNG data URL. */

@@ -13,6 +13,16 @@ export type PricingPlan = {
   durationDays: number;
 };
 
+export type GenerationType = 'text' | 'image';
+
+/** Current-month consumption against the PRO quota. */
+export type UsageSummary = {
+  imagesUsed: number;
+  imagesLimit: number;
+  tokensUsed: number;
+  tokensLimit: number;
+};
+
 export type UserSubscription = {
   isPro: boolean;
   proUntil: Date | null;

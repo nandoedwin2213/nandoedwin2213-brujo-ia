@@ -1,4 +1,4 @@
-import { boolean, integer, jsonb, pgEnum, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
+import { boolean, index, integer, jsonb, pgEnum, pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core';
 
 // This file defines the structure of your database tables using the Drizzle ORM.
 // After editing it, generate a migration with `npm run db:generate`.
@@ -10,6 +10,17 @@ export const paymentStatusEnum = pgEnum('payment_status', [
   'REJECTED',
   'ERROR',
 ]);
+
+export const generationTypeEnum = pgEnum('generation_type', ['text', 'image']);
+
+/** One row per successful Venice generation; drives monthly quotas and rate limits. */
+export const generationSchema = pgTable('generations', {
+  id: serial('id').primaryKey(),
+  userId: text('user_id').notNull(),
+  type: generationTypeEnum('type').notNull(),
+  tokens: integer('tokens').default(0).notNull(),
+  createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
+}, table => [index('generations_user_created_idx').on(table.userId, table.createdAt)]);
 
 /** PRO access per Clerk user. */
 export const subscriptionSchema = pgTable('subscriptions', {

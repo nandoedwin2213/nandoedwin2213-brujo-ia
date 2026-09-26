@@ -138,7 +138,12 @@
     "result_title": "Result",
     "result_empty": "Your result will appear here.",
     "error_pro_required": "You need an active PRO plan to generate.",
-    "error_generic": "Generation failed. Please try again."
+    "error_generic": "Generation failed. Please try again.",
+    "error_quota": "You've used up your monthly quota. It resets on the 1st of each month.",
+    "error_rate_limit": "Too fast. Wait a minute and try again.",
+    "usage_images": "Images this month",
+    "usage_tokens": "Text tokens this month",
+    "usage_note": "Quota resets on the 1st of each month."
   },
   "BillingPage": {
     "title_bar": "Billing",
