@@ -13,6 +13,8 @@ export const paymentStatusEnum = pgEnum('payment_status', [
 
 export const generationTypeEnum = pgEnum('generation_type', ['text', 'image']);
 
+export const planEnum = pgEnum('plan', ['free', 'premium', 'vip']);
+
 /** One row per successful Venice generation; drives monthly quotas and rate limits. */
 export const generationSchema = pgTable('generations', {
   id: serial('id').primaryKey(),
@@ -22,10 +24,11 @@ export const generationSchema = pgTable('generations', {
   createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
 }, table => [index('generations_user_created_idx').on(table.userId, table.createdAt)]);
 
-/** PRO access per Clerk user. */
+/** Paid plan per Clerk user; users without a row (or with an expired period) are on the free plan. */
 export const subscriptionSchema = pgTable('subscriptions', {
   userId: text('user_id').primaryKey(),
   isPro: boolean('is_pro').default(false).notNull(),
+  plan: planEnum('plan').default('free').notNull(),
   proUntil: timestamp('pro_until', { mode: 'date' }),
   updatedAt: timestamp('updated_at', { mode: 'date' })
     .defaultNow()
@@ -40,6 +43,7 @@ export const paymentSchema = pgTable('payments', {
   userId: text('user_id').notNull(),
   clientTransactionId: text('client_transaction_id').notNull().unique(),
   payphoneTransactionId: text('payphone_transaction_id'),
+  plan: planEnum('plan').default('premium').notNull(),
   amountCents: integer('amount_cents').notNull(),
   currency: text('currency').default('USD').notNull(),
   status: paymentStatusEnum('status').default('PENDING').notNull(),

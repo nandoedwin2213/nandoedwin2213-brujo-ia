@@ -1,7 +1,9 @@
 import type { EnumValues } from './Enum';
-import type { PLAN_NAME } from '@/utils/PricingPlans';
+import type { PAID_PLANS, PLAN_NAME } from '@/utils/PricingPlans';
 
-type PlanName = EnumValues<typeof PLAN_NAME>;
+export type PlanName = EnumValues<typeof PLAN_NAME>;
+
+export type PaidPlanName = (typeof PAID_PLANS)[number];
 
 export type PricingPlan = {
   name: PlanName;
@@ -9,14 +11,25 @@ export type PricingPlan = {
   price: number;
   /** Price in cents, as sent to PayPhone. */
   priceCents: number;
-  /** Length of the PRO period granted by one payment (0 for the free plan). */
+  /** Length of the access period granted by one payment (0 for the free plan). */
   durationDays: number;
+};
+
+export type PlanLimits = {
+  images: number;
+  tokens: number;
+  imagesPerMinute: number;
+  textsPerMinute: number;
+  /** Monthly quota when true; lifetime quota when false. */
+  resetsMonthly: boolean;
 };
 
 export type GenerationType = 'text' | 'image';
 
-/** Current-month consumption against the PRO quota. */
+/** Consumption against the quota of the user's current plan. */
 export type UsageSummary = {
+  plan: PlanName;
+  resetsMonthly: boolean;
   imagesUsed: number;
   imagesLimit: number;
   tokensUsed: number;
@@ -24,6 +37,8 @@ export type UsageSummary = {
 };
 
 export type UserSubscription = {
-  isPro: boolean;
-  proUntil: Date | null;
+  /** Effective plan: paid plans fall back to `free` once expired. */
+  plan: PlanName;
+  isPaid: boolean;
+  paidUntil: Date | null;
 };

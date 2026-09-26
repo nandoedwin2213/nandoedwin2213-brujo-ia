@@ -12,7 +12,7 @@ const GenerateSchema = z.object({
   prompt: z.string().trim().min(1).max(4000),
 });
 
-/** PRO-only Venice.ai generation endpoint. */
+/** Venice.ai generation endpoint; every plan (including free) has its own quota. */
 export async function POST(request: NextRequest) {
   const { userId } = await auth();
 
@@ -20,12 +20,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const subscription = await getUserSubscription(userId);
-
-  if (!subscription.isPro) {
-    return NextResponse.json({ error: 'PRO plan required' }, { status: 402 });
-  }
-
+  const { plan } = await getUserSubscription(userId);
   const parsed = GenerateSchema.safeParse(await request.json().catch(() => null));
 
   if (!parsed.success) {
@@ -33,11 +28,11 @@ export async function POST(request: NextRequest) {
   }
 
   const { type, prompt } = parsed.data;
-  const usage = await checkUsage(userId, type);
+  const usage = await checkUsage(userId, plan, type);
 
   if (!usage.ok) {
     return NextResponse.json(
-      { error: usage.reason, usage: await getUsageSummary(userId) },
+      { error: usage.reason, usage: await getUsageSummary(userId, plan) },
       { status: usage.reason === 'quota' ? 402 : 429 },
     );
   }
@@ -54,7 +49,7 @@ export async function POST(request: NextRequest) {
 
     await recordGeneration(userId, type, tokens);
 
-    return NextResponse.json({ type, result, usage: await getUsageSummary(userId) });
+    return NextResponse.json({ type, result, usage: await getUsageSummary(userId, plan) });
   } catch (error) {
     logger.error(`Venice error: ${error instanceof Error ? error.message : String(error)}`);
 
