@@ -138,7 +138,12 @@
     "result_title": "Resultado",
     "result_empty": "Tu resultado aparecerá aquí.",
     "error_pro_required": "Necesitas un plan PRO activo para generar.",
-    "error_generic": "La generación falló. Inténtalo de nuevo."
+    "error_generic": "La generación falló. Inténtalo de nuevo.",
+    "error_quota": "Has agotado tu cuota mensual. Se renueva el día 1 de cada mes.",
+    "error_rate_limit": "Vas demasiado rápido. Espera un minuto y vuelve a intentarlo.",
+    "usage_images": "Imágenes este mes",
+    "usage_tokens": "Tokens de texto este mes",
+    "usage_note": "La cuota se renueva el día 1 de cada mes."
   },
   "BillingPage": {
     "title_bar": "Pagos",

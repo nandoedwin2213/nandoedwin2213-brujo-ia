@@ -4,6 +4,7 @@ import { NextResponse } from 'next/server';
 import * as z from 'zod';
 import { logger } from '@/libs/Logger';
 import { getUserSubscription } from '@/libs/Subscription';
+import { checkUsage, getUsageSummary, recordGeneration } from '@/libs/Usage';
 import { generateImage, generateText } from '@/libs/Venice';
 
 const GenerateSchema = z.object({
@@ -31,11 +32,29 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid request' }, { status: 422 });
   }
 
-  try {
-    const { type, prompt } = parsed.data;
-    const result = type === 'text' ? await generateText(prompt) : await generateImage(prompt);
+  const { type, prompt } = parsed.data;
+  const usage = await checkUsage(userId, type);
 
-    return NextResponse.json({ type, result });
+  if (!usage.ok) {
+    return NextResponse.json(
+      { error: usage.reason, usage: await getUsageSummary(userId) },
+      { status: usage.reason === 'quota' ? 402 : 429 },
+    );
+  }
+
+  try {
+    let result: string;
+    let tokens = 0;
+
+    if (type === 'text') {
+      ({ content: result, tokens } = await generateText(prompt));
+    } else {
+      result = await generateImage(prompt);
+    }
+
+    await recordGeneration(userId, type, tokens);
+
+    return NextResponse.json({ type, result, usage: await getUsageSummary(userId) });
   } catch (error) {
     logger.error(`Venice error: ${error instanceof Error ? error.message : String(error)}`);
 

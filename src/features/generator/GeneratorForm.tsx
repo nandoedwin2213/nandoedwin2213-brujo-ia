@@ -1,14 +1,46 @@
 'use client';
 
+import type { GenerationType, UsageSummary } from '@/types/Subscription';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { buttonVariants } from '@/components/ui/buttonVariants';
 import { cn } from '@/utils/Helpers';
 
-type GenerationType = 'text' | 'image';
+type ApiResponse = {
+  type?: GenerationType;
+  result?: string;
+  error?: string;
+  usage?: UsageSummary;
+};
 
-export const GeneratorForm = () => {
+const UsageBar = (props: { label: string; used: number; limit: number }) => {
+  const percent = Math.min(100, Math.round((props.used / props.limit) * 100));
+
+  return (
+    <div>
+      <div className="flex justify-between text-xs text-muted-foreground">
+        <span>{props.label}</span>
+        <span>
+          {props.used.toLocaleString()}
+          {' / '}
+          {props.limit.toLocaleString()}
+        </span>
+      </div>
+      <div className="mt-1 h-1.5 w-full rounded-full bg-muted">
+        <div
+          className={cn('h-1.5 rounded-full', percent >= 90
+            ? 'bg-destructive'
+            : `bg-primary`)}
+          style={{ width: `${percent}%` }}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const GeneratorForm = (props: { usage: UsageSummary }) => {
   const t = useTranslations('Generator');
+  const [usage, setUsage] = useState(props.usage);
   const [type, setType] = useState<GenerationType>('text');
   const [prompt, setPrompt] = useState('');
   const [loading, setLoading] = useState(false);
@@ -27,10 +59,20 @@ export const GeneratorForm = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ type, prompt }),
       });
-      const data: { type?: GenerationType; result?: string; error?: string } = await res.json();
+      const data: ApiResponse = await res.json();
+
+      if (data.usage) {
+        setUsage(data.usage);
+      }
 
       if (!res.ok || !data.result || !data.type) {
-        setError(res.status === 402 ? t('error_pro_required') : t('error_generic'));
+        if (res.status === 429) {
+          setError(t('error_rate_limit'));
+        } else if (res.status === 402) {
+          setError(data.error === 'quota' ? t('error_quota') : t('error_pro_required'));
+        } else {
+          setError(t('error_generic'));
+        }
         return;
       }
 
@@ -93,6 +135,12 @@ export const GeneratorForm = () => {
         </button>
 
         {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
+
+        <div className="mt-5 grid gap-3 border-t border-border pt-4">
+          <UsageBar label={t('usage_images')} used={usage.imagesUsed} limit={usage.imagesLimit} />
+          <UsageBar label={t('usage_tokens')} used={usage.tokensUsed} limit={usage.tokensLimit} />
+          <p className="text-xs text-muted-foreground">{t('usage_note')}</p>
+        </div>
       </form>
 
       <div className="

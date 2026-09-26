@@ -8,6 +8,7 @@ import { TitleBar } from '@/features/dashboard/TitleBar';
 import { GeneratorForm } from '@/features/generator/GeneratorForm';
 import { Link } from '@/libs/I18nNavigation';
 import { getUserSubscription } from '@/libs/Subscription';
+import { getUsageSummary } from '@/libs/Usage';
 import { cn } from '@/utils/Helpers';
 import { ProPlan } from '@/utils/PricingPlans';
 
@@ -61,7 +62,7 @@ export default async function DashboardIndexPage(props: {
 
       {subscription.isPro
         ? (
-            <GeneratorForm />
+            <GeneratorForm usage={await getUsageSummary(userId)} />
           )
         : (
             <PageMessage

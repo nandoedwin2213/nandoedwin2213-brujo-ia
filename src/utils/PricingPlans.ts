@@ -22,4 +22,12 @@ export const ProPlan: PricingPlan = {
   durationDays: 30,
 };
 
+/** Monthly quota and burst limits for PRO users; keeps Venice costs well under the plan price. */
+export const ProLimits = {
+  imagesPerMonth: 500,
+  tokensPerMonth: 2_000_000,
+  imagesPerMinute: 10,
+  textsPerMinute: 20,
+} as const;
+
 export const AllPlans = [FreePlan, ProPlan];
