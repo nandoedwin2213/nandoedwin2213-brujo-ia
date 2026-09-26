@@ -30,6 +30,10 @@ export const Navbar = () => {
         )}
       >
         <li>
+          <Link href="/#use-cases">{t('use_cases')}</Link>
+        </li>
+
+        <li>
           <Link href="/#features">{t('product')}</Link>
         </li>
 
