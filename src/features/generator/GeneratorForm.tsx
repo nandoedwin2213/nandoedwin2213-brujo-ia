@@ -14,7 +14,7 @@ type ApiResponse = {
 };
 
 const UsageBar = (props: { label: string; used: number; limit: number }) => {
-  const percent = Math.min(100, Math.round((props.used / props.limit) * 100));
+  const percent = Math.min(100, Math.floor((props.used / props.limit) * 100));
 
   return (
     <div>
