@@ -11,7 +11,7 @@ Basado en [ixartz/SaaS-Boilerplate](https://github.com/ixartz/SaaS-Boilerplate) 
 - Plan PRO ($19 / 30 días) pagado con PayPhone:
   - `POST /api/payphone` crea el pago (`/api/button/Prepare`) y devuelve la URL de la cajita de pagos.
   - `GET /api/payphone/response` es la URL de retorno: confirma server-side (`/api/button/V2/Confirm`), guarda el resultado y activa PRO.
-- Generador Venice.ai (texto `llama-3.3-70b`, imagen `lustify-sdxl`) en el dashboard, solo para usuarios PRO: `POST /api/generate`.
+- Generador Venice.ai (texto `venice-uncensored-1-2`, imagen `lustify-sdxl`) en el dashboard, solo para usuarios PRO: `POST /api/generate`.
 - Historial de pagos en `/dashboard/billing`.
 
 ## Puesta en marcha
@@ -31,7 +31,7 @@ Variables necesarias (`.env.local`):
 | `PAYPHONE_AUTH_TOKEN` | Token de la app en PayPhone Developer |
 | `PAYPHONE_STORE_ID` | Opcional; vacío usa la tienda por defecto |
 | `VENICE_API_KEY` | API key de Venice.ai |
-| `VENICE_MODEL` / `VENICE_IMAGE_MODEL` | Modelos (por defecto `llama-3.3-70b` / `lustify-sdxl`) |
+| `VENICE_MODEL` / `VENICE_IMAGE_MODEL` | Modelos (por defecto `venice-uncensored-1-2` / `lustify-sdxl`) |
 | `NEXT_PUBLIC_APP_URL` | URL pública, usada para las URLs de retorno de PayPhone |
 
 Registra `NEXT_PUBLIC_APP_URL` como dominio autorizado en tu aplicación de PayPhone.
