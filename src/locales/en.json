@@ -95,7 +95,7 @@
   "PricingPlans": {
     "free_plan_name": "Free",
     "free_feature_1": "3 trial images",
-    "free_feature_2": "10 trial texts (20k tokens)",
+    "free_feature_2": "~10 trial texts (20,000 tokens)",
     "free_feature_3": "Uncensored from the first prompt",
     "free_feature_4": "No card, once per account",
     "premium_plan_name": "Premium",
@@ -175,7 +175,7 @@
     "payment_rejected": "PayPhone rejected the payment. Nothing was charged.",
     "payment_error": "We could not confirm the payment. If you were charged, contact support.",
     "free_banner_title": "You're on the free trial",
-    "free_banner_description": "You have {images} trial images and 10 trial texts. Upgrade to Premium (${premiumPrice}: {premiumImages} images/month) or VIP (${vipPrice}: {vipImages} images/month) to keep creating without trial limits."
+    "free_banner_description": "You have {images} trial images and about 10 trial texts (20,000 tokens). Upgrade to Premium (${premiumPrice}: {premiumImages} images/month) or VIP (${vipPrice}: {vipImages} images/month) to keep creating without trial limits."
   },
   "Generator": {
     "tab_text": "Text",
