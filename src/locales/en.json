@@ -66,7 +66,7 @@
   "Features": {
     "section_subtitle": "Features",
     "section_title": "Everything an AI should let you do",
-    "section_description": "Powered by Venice.ai's private, uncensored models. Your prompts are not stored or used for training.",
+    "section_description": "Powered by the best private, uncensored models on the market. Your prompts are not stored or used for training.",
     "feature1_title": "Uncensored text",
     "feature1_description": "Write stories, scripts, copy or code without refusals or moralizing. The model answers what you ask.",
     "feature2_title": "Unrestricted images",
@@ -125,7 +125,7 @@
   },
   "FAQ": {
     "question1": "Is Brujo IA really uncensored?",
-    "answer1": "Yes. We use Venice.ai's uncensored models with the safety filters disabled. The model answers what you ask, with no corporate filter in between.",
+    "answer1": "Yes. We work with the best private uncensored models, with the safety filters disabled. The model answers what you ask, with no corporate filter in between.",
     "question2": "How do I pay?",
     "answer2": "With PayPhone, using your PayPhone balance or any card. Premium costs $19 and VIP $39; both last 30 days. You can try it free first.",
     "question3": "Does it renew automatically?",
@@ -168,7 +168,7 @@
   },
   "DashboardIndexPage": {
     "title_bar": "Generator",
-    "title_bar_description": "Text and images without restrictions, powered by Venice.ai",
+    "title_bar_description": "Text and images without restrictions, powered by the best private models",
     "paywall_pricing_link": "Compare plans",
     "payment_approved": "Payment approved. Your plan is active!",
     "payment_cancelled": "Payment cancelled. Nothing was charged.",

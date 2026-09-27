@@ -66,7 +66,7 @@
   "Features": {
     "section_subtitle": "Funciones",
     "section_title": "Todo lo que una IA debería dejarte hacer",
-    "section_description": "Impulsado por los modelos privados y sin censura de Venice.ai. Tus prompts no se almacenan ni se usan para entrenar.",
+    "section_description": "Impulsado por los mejores modelos privados y sin censura del mercado. Tus prompts no se almacenan ni se usan para entrenar.",
     "feature1_title": "Texto sin censura",
     "feature1_description": "Escribe historias, guiones, copys o código sin negativas ni sermones. El modelo responde lo que le pides.",
     "feature2_title": "Imágenes sin restricciones",
@@ -125,7 +125,7 @@
   },
   "FAQ": {
     "question1": "¿Brujo IA realmente no tiene censura?",
-    "answer1": "Sí. Usamos los modelos sin censura de Venice.ai con los filtros de seguridad desactivados. El modelo responde lo que le pides, sin un filtro corporativo en medio.",
+    "answer1": "Sí. Trabajamos con los mejores modelos privados sin censura, con los filtros de seguridad desactivados. El modelo responde lo que le pides, sin un filtro corporativo en medio.",
     "question2": "¿Cómo pago?",
     "answer2": "Con PayPhone, usando tu saldo PayPhone o cualquier tarjeta. Premium cuesta $19 y VIP $39; ambos duran 30 días. Antes puedes probar gratis.",
     "question3": "¿Se renueva automáticamente?",
@@ -168,7 +168,7 @@
   },
   "DashboardIndexPage": {
     "title_bar": "Generador",
-    "title_bar_description": "Texto e imágenes sin restricciones, con la potencia de Venice.ai",
+    "title_bar_description": "Texto e imágenes sin restricciones, con la potencia de los mejores modelos privados",
     "paywall_pricing_link": "Comparar planes",
     "payment_approved": "Pago aprobado. ¡Tu plan está activo!",
     "payment_cancelled": "Pago cancelado. No se cobró nada.",
