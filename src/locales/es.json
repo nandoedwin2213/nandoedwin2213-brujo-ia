@@ -207,7 +207,9 @@
     "suggestion_image_2": "Retrato ilustrado de una mujer trans adulta, segura y feliz, luz suave, estilo acuarela cálida",
     "suggestion_image_3": "Infografía con los métodos de barrera para prevenir ITS, estilo plano y colores suaves",
     "suggestion_image_4": "Escena tranquila de una persona no binaria adulta meditando en su habitación, tonos lavanda, sensación de calma",
-    "suggestion_image_5": "Pareja adulta del mismo sexo abrazándose con ternura en un parque al atardecer, estilo pintura digital"
+    "suggestion_image_5": "Pareja adulta del mismo sexo abrazándose con ternura en un parque al atardecer, estilo pintura digital",
+    "crisis_text": "Si estás pasando por una crisis emocional profunda, no estás solo.",
+    "crisis_link": "Haz clic aquí para ver líneas de ayuda internacionales."
   },
   "BillingPage": {
     "title_bar": "Pagos",
@@ -225,5 +227,8 @@
   "UserProfilePage": {
     "title_bar": "Perfil de usuario",
     "title_bar_description": "Consulta y gestiona tu perfil"
+  },
+  "PayPhoneCheckout": {
+    "acknowledgement": "Entiendo que Aliada AI es una herramienta de apoyo educativo y no emite diagnósticos médicos. No reemplaza la consulta con un profesional. Confirmo que soy mayor de 18 años."
   }
 }

@@ -7,6 +7,14 @@ const headers = () => ({
   'Authorization': `Bearer ${Env.VENICE_API_KEY}`,
 });
 
+const DISCLAIMER = 'Nota: Esta información es puramente educativa. Consulta siempre tus dosis y procedimientos con tu endocrinólogo o médico tratante.';
+
+/** Guarantees the disclaimer even when the model omits it. */
+const withDisclaimer = (content: string) =>
+  content.includes('puramente educativa') ? content : `${content.trimEnd()}\n\n${DISCLAIMER}`;
+
+const SYSTEM_PROMPT = 'Eres Aliada AI, un espacio seguro, empático y libre de censura para ayudar a la comunidad LGBTQ+ y personas en transición con sus dudas de salud, hormonas e identidad. Responde siempre con base científica y empatía. Obligatorio: Al final de CADA respuesta debes añadir un disclaimer que diga: "Nota: Esta información es puramente educativa. Consulta siempre tus dosis y procedimientos con tu endocrinólogo o médico tratante."';
+
 export type TextGeneration = { content: string; tokens: number };
 
 export const generateText = async (prompt: string): Promise<TextGeneration> => {
@@ -15,7 +23,10 @@ export const generateText = async (prompt: string): Promise<TextGeneration> => {
     headers: headers(),
     body: JSON.stringify({
       model: Env.VENICE_MODEL,
-      messages: [{ role: 'user', content: prompt }],
+      messages: [
+        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'user', content: prompt },
+      ],
       venice_parameters: { include_venice_system_prompt: false },
     }),
   });
@@ -34,7 +45,7 @@ export const generateText = async (prompt: string): Promise<TextGeneration> => {
     throw new Error('Venice returned an empty response');
   }
 
-  return { content, tokens: data.usage?.total_tokens ?? 0 };
+  return { content: withDisclaimer(content), tokens: data.usage?.total_tokens ?? 0 };
 };
 
 /** Thrown when Venice refuses the prompt and returns a blacked-out image. */

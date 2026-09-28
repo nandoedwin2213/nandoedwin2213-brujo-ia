@@ -136,6 +136,22 @@ export const GeneratorForm = (props: { usage: UsageSummary }) => {
           "
         />
 
+        <p className="mt-2 text-xs text-muted-foreground">
+          {t('crisis_text')}
+          {' '}
+          <a
+            href="https://findahelpline.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              font-medium text-primary underline underline-offset-2
+              hover:text-primary/80
+            "
+          >
+            {t('crisis_link')}
+          </a>
+        </p>
+
         <button
           type="submit"
           disabled={loading || prompt.trim().length === 0}

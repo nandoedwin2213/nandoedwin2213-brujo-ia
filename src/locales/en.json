@@ -207,7 +207,9 @@
     "suggestion_image_2": "Illustrated portrait of a confident, happy adult trans woman, soft light, warm watercolor style",
     "suggestion_image_3": "Infographic of barrier methods to prevent STIs, flat style with soft colors",
     "suggestion_image_4": "Calm scene of an adult non-binary person meditating in their room, lavender tones, sense of peace",
-    "suggestion_image_5": "Adult same-sex couple hugging tenderly in a park at sunset, digital painting style"
+    "suggestion_image_5": "Adult same-sex couple hugging tenderly in a park at sunset, digital painting style",
+    "crisis_text": "If you are going through a deep emotional crisis, you are not alone.",
+    "crisis_link": "Click here to see international helplines."
   },
   "BillingPage": {
     "title_bar": "Billing",
@@ -225,5 +227,8 @@
   "UserProfilePage": {
     "title_bar": "User Profile",
     "title_bar_description": "View and manage your user profile"
+  },
+  "PayPhoneCheckout": {
+    "acknowledgement": "I understand that Aliada AI is an educational support tool and does not issue medical diagnoses. It does not replace consultation with a professional. I confirm that I am over 18 years old."
   }
 }

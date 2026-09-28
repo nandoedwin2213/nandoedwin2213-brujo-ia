@@ -2,7 +2,7 @@ import { auth } from '@clerk/nextjs/server';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import { buttonVariants } from '@/components/ui/buttonVariants';
-import { PayPhoneButton } from '@/features/billing/PayPhoneButton';
+import { PayPhoneCheckout } from '@/features/billing/PayPhoneCheckout';
 import { TitleBar } from '@/features/dashboard/TitleBar';
 import { GeneratorForm } from '@/features/generator/GeneratorForm';
 import { Link } from '@/libs/I18nNavigation';
@@ -75,17 +75,11 @@ export default async function DashboardIndexPage(props: {
               vipImages: PlanLimitsByName.vip.images,
             })}
           </p>
-          <div className="
-            mt-4 flex flex-col gap-3
-            sm:flex-row
-          "
-          >
-            <PayPhoneButton plan="premium" className="sm:w-64" />
-            <PayPhoneButton plan="vip" variant="outline" className="sm:w-64" />
+          <PayPhoneCheckout>
             <Link href="/pricing" className={buttonVariants({ variant: 'link', size: 'sm' })}>
               {t('paywall_pricing_link')}
             </Link>
-          </div>
+          </PayPhoneCheckout>
         </div>
       )}
 
