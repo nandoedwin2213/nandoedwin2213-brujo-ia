@@ -1,13 +1,13 @@
 {
   "Index": {
-    "meta_title": "Brujo IA - Unrestricted, uncensored AI",
-    "meta_description": "Brujo IA is an AI platform with no restrictions and no censorship: generate text and images with full freedom. Pay locally with PayPhone."
+    "meta_title": "Aliada AI - Your safe space for intimate and identity questions",
+    "meta_description": "Aliada AI is a judgment-free, unfiltered and 100% confidential AI companion for your questions about sexual health, transition and emotional wellbeing. Built with a medical perspective."
   },
   "Navbar": {
     "sign_in": "Sign in",
     "sign_up": "Sign up",
-    "use_cases": "Use cases",
-    "product": "Features",
+    "use_cases": "Who it's for",
+    "product": "Why Aliada",
     "pricing": "Pricing",
     "faq": "FAQ",
     "dashboard": "Dashboard"
@@ -16,87 +16,81 @@
     "button_label": "Change language"
   },
   "Hero": {
-    "banner": "Uncensored text and image generation",
-    "title": "The <important>AI with no limits</important>. No filters, no censorship, no excuses.",
-    "description": "Brujo IA gives you private access to uncensored AI models to write, create images and explore any idea, without a corporate filter deciding what you can ask. Pay with PayPhone in seconds.",
-    "primary_button": "Create free account",
-    "secondary_button": "See pricing"
+    "banner": "Built with a medical perspective · Confidential",
+    "title": "Your safe space for <important>intimate and identity questions</important>.",
+    "description": "A judgment-free, unfiltered and 100% confidential AI companion. Ask the questions about your health, sexuality or transition that you don't dare to ask in public. Built with a medical perspective.",
+    "primary_button": "Talk in Private",
+    "secondary_button": "See plans"
   },
   "UseCases": {
-    "section_subtitle": "What is Brujo IA for?",
-    "section_title": "An AI for what the others won't dare",
-    "section_description": "Real use ideas. Ask for anything, as explicit or daring as you need: Brujo answers without judging.",
-    "couples_title": "Couples & partners",
-    "couples_description": "Spicy texts, love letters, games and personalised fantasies to surprise your partner. Fantasy images starring the two of you.",
-    "couples_example": "“Write my girlfriend a daring message for tonight, in our inside-joke style…”",
-    "creators_title": "Adult content creators",
-    "creators_description": "Scripts, captions, set ideas and artwork for OnlyFans, Fansly or Telegram. Unfiltered images for covers and promos.",
-    "creators_example": "“Give me 10 provocative captions for today's post and a boudoir-style cover image.”",
-    "friends_title": "Friends",
-    "friends_description": "Roasts, pranks, custom memes, bachelor/bachelorette parties and politically incorrect jokes for the group chat.",
-    "friends_example": "“Write a brutal roast of my friend Carlos, who's always late and brags about his bike.”",
-    "roleplay_title": "Roleplay & companionship",
-    "roleplay_description": "Immersive conversations with characters that remember context and never break role. Virtual girlfriend/boyfriend, adventures or interactive stories.",
-    "roleplay_example": "“You're a mysterious vampire in a Quito bar and I just walked in…”",
-    "writers_title": "Writers & fiction",
-    "writers_description": "Romance, erotica, horror or thrillers with no refusals. Explicit scenes, real villains and raw dialogue when the story calls for it.",
-    "writers_example": "“Continue chapter 3: the reunion scene, intense and uncensored.”",
-    "marketing_title": "Business without filters",
-    "marketing_description": "Aggressive copy, ads for sex shops, bars, tobacco or betting, and content other AIs refuse to write.",
-    "marketing_example": "“Write 5 Instagram ads for my sex shop with humour and double meaning.”"
+    "section_subtitle": "Who is Aliada for?",
+    "section_title": "Questions that deserve a judgment-free answer",
+    "section_description": "Write in your own words, without fear of anyone's reaction. Aliada answers calmly, with clear information and respect.",
+    "couples_title": "Transition and hormone therapy",
+    "couples_description": "Questions about hormones, expected effects, timelines, follow-up and how to talk about it with your doctor or family.",
+    "couples_example": "“I started estrogen 3 months ago. Which changes are normal and which should I get checked?”",
+    "creators_title": "Sexual health",
+    "creators_description": "STIs, PrEP and PEP, contraception, safer practices, symptoms and when to see a doctor, explained without shame.",
+    "creators_example": "“I had unprotected sex 2 days ago. What are my options and how urgent is it?”",
+    "friends_title": "Identity and orientation",
+    "friends_description": "A place to sort out what you feel, understand the terms and prepare for hard conversations at your own pace.",
+    "friends_example": "“I think I'm non-binary but don't know how to tell my parents. Where do I start?”",
+    "roleplay_title": "Emotional wellbeing",
+    "roleplay_description": "Anxiety, dysphoria, family rejection or loneliness: empathetic support and resources, without replacing a professional.",
+    "roleplay_example": "“Dysphoria is hitting hard today. I need to talk to someone who won't judge me.”",
+    "writers_title": "Surgeries and procedures",
+    "writers_description": "What they involve, preparation, recovery and the key questions to ask your medical team before deciding.",
+    "writers_example": "“What should I ask at my first consultation for gender-affirming top surgery?”",
+    "marketing_title": "Families and allies",
+    "marketing_description": "For parents, partners and friends who want to be there for someone and don't know how to ask.",
+    "marketing_example": "“My son told me he's trans. I want to support him well: what should I know and what should I avoid?”"
   },
   "HowItWorks": {
     "section_subtitle": "How it works",
-    "section_title": "Ready in under 2 minutes",
-    "section_description": "No international cards, no setup. Sign up, pay with PayPhone and start generating.",
+    "section_title": "Start talking in under 2 minutes",
+    "section_description": "No international cards or setup. Create your account, try it free and pay with PayPhone when you want more.",
     "step1_title": "Create your account",
-    "step1_description": "Sign up with your email or Google. It's free and takes 30 seconds.",
-    "step2_title": "Try it free or activate a plan",
-    "step2_description": "New accounts include a free trial (3 images and 10 texts). When you want more, pay Premium ($19) or VIP ($39) with PayPhone and your plan is active instantly for 30 days.",
-    "step3_title": "Pick Text or Image",
-    "step3_description": "In the dashboard choose the Text tab to write or the Image tab to generate high-resolution art.",
-    "step4_title": "Type your prompt and generate",
-    "step4_description": "Describe what you want in detail and hit Generate. Your monthly usage shows in the dashboard bars.",
-    "tips_title": "Tips for better results",
-    "tip1": "Be specific: mention tone, length, characters and context (“short message, playful tone, for my wife”).",
-    "tip2": "For images describe style, lighting and framing (“realistic photo, warm light, close-up”).",
-    "tip3": "Not convinced? Ask for concrete changes in a new prompt: “more explicit”, “shorter”, “in verse”.",
-    "tip4": "Premium includes 500 images and 2 million tokens per month; VIP triples the quota (1,500 images and 6 million tokens)."
+    "step1_description": "Sign up with your email or Google. It's free, takes 30 seconds and nobody else sees your activity.",
+    "step2_title": "Try free or activate a plan",
+    "step2_description": "Your new account includes a free trial. When you want more, pay Premium ($19) or VIP ($39) with PayPhone and your plan is active instantly for 30 days.",
+    "step3_title": "Choose Conversation or Image",
+    "step3_description": "In the dashboard pick Text to talk or Image if you need visual support material.",
+    "step4_title": "Ask in your own words",
+    "step4_description": "Describe your situation in detail and press Generate. You'll see your usage in the dashboard bars.",
+    "tips_title": "Tips for a better conversation",
+    "tip1": "Give context: age, how long since you started a treatment, symptoms and since when.",
+    "tip2": "Ask what you don't dare to ask in a consultation: nobody judges or interrupts you here.",
+    "tip3": "If an answer isn't clear, ask for a simpler explanation or examples.",
+    "tip4": "Aliada informs and supports you but does not replace your doctor. In an emergency, go to a health service."
   },
   "Features": {
-    "section_subtitle": "Features",
-    "section_title": "Everything an AI should let you do",
-    "section_description": "Powered by the best private, uncensored models on the market. Your prompts are not stored or used for training.",
-    "feature1_title": "Uncensored text",
-    "feature1_description": "Write stories, scripts, copy or code without refusals or moralizing. The model answers what you ask.",
-    "feature2_title": "Unrestricted images",
-    "feature2_description": "Generate high-resolution images from any prompt, with no watermark and no content filter.",
-    "feature3_title": "Real privacy",
-    "feature3_description": "Your prompts and results are processed privately and never used to train models.",
-    "feature4_title": "Pay with PayPhone",
-    "feature4_description": "No international cards required. Pay in USD with PayPhone, the local payment gateway.",
-    "feature5_title": "Instant access",
-    "feature5_description": "Your plan activates the moment PayPhone confirms the payment. No waiting.",
-    "feature6_title": "No subscriptions that trap you",
-    "feature6_description": "One payment, 30 days of access. Renew whenever you want, nothing charges automatically."
+    "section_subtitle": "Why Aliada",
+    "section_title": "A place where you can really ask",
+    "section_description": "Designed by a physician so that no question about your body, your sexuality or your identity goes unanswered.",
+    "feature1_title": "Zero Corporate Filters",
+    "feature1_description": "Our AI doesn't block questions about hormones, surgeries or sexual health. Built with the Venice API.",
+    "feature2_title": "Absolute Privacy",
+    "feature2_description": "Your intimate conversations are never used to train algorithms or sold to third parties.",
+    "feature3_title": "Discreet Subscription",
+    "feature3_description": "Secure, local payments through PayPhone for your peace of mind."
   },
   "Pricing": {
     "section_subtitle": "Pricing",
-    "section_title": "Start free, grow when you want",
-    "section_description": "Try it without paying. Once you're hooked, pick Premium or VIP and pay locally with PayPhone.",
+    "section_title": "Start free, continue when you need it",
+    "section_description": "Try without paying. When you want ongoing support, pick Premium or VIP and pay locally with PayPhone.",
     "button_free": "Create free account",
     "button_premium": "Get Premium",
     "button_vip": "Get VIP"
   },
   "PricingPage": {
-    "meta_title": "Pricing - Brujo IA",
-    "meta_description": "Try Brujo IA free and unlock Premium or VIP for 30 days with a single PayPhone payment."
+    "meta_title": "Pricing - Aliada AI",
+    "meta_description": "Try Aliada AI free and unlock Premium or VIP for 30 days with a single PayPhone payment."
   },
   "PricingPlans": {
     "free_plan_name": "Free",
     "free_feature_1": "3 trial images",
     "free_feature_2": "~10 trial texts (20,000 tokens)",
-    "free_feature_3": "Uncensored from the first prompt",
+    "free_feature_3": "Judgment-free from the first question",
     "free_feature_4": "No card, once per account",
     "premium_plan_name": "Premium",
     "premium_feature_1": "500 images per month",
@@ -107,12 +101,12 @@
     "vip_feature_1": "1,500 images per month",
     "vip_feature_2": "6 million text tokens per month",
     "vip_feature_3": "Up to 20 images per minute and priority queue",
-    "vip_feature_4": "Early access to new features (character chat, image editing, voice)"
+    "vip_feature_4": "Early access to new features (chat with memory, voice)"
   },
   "PricingCard": {
     "free_plan_description": "Try with no commitment",
-    "premium_plan_description": "For daily use",
-    "vip_plan_description": "For heavy users",
+    "premium_plan_description": "For ongoing support",
+    "vip_plan_description": "For daily users",
     "most_popular": "Most popular",
     "plan_price": "${price}",
     "plan_interval_days": "/ {days} days",
@@ -124,23 +118,23 @@
     "error": "We could not start the payment. Please try again."
   },
   "FAQ": {
-    "question1": "Is Brujo IA really uncensored?",
-    "answer1": "Yes. We work with the best private uncensored models, with the safety filters disabled. The model answers what you ask, with no corporate filter in between.",
+    "question1": "Does Aliada really answer without filters?",
+    "answer1": "Yes. We use models without corporate censorship, so you can ask about hormones, surgeries, sexual practices or identity and get clear, respectful information.",
     "question2": "How do I pay?",
     "answer2": "With PayPhone, using your PayPhone balance or any card. Premium costs $19 and VIP $39; both last 30 days. You can try it free first.",
     "question3": "Does it renew automatically?",
     "answer3": "No. Nothing is charged automatically. When your 30 days end you decide whether to pay again.",
-    "question4": "Are my prompts stored?",
-    "answer4": "Prompts and results are processed privately and are not used to train any model.",
-    "question5": "What can I generate?",
-    "answer5": "Text of any kind (stories, scripts, code, copy) and high-resolution images from a text prompt.",
+    "question4": "Are my conversations stored?",
+    "answer4": "Your conversations are processed privately, never used to train models and never sold to third parties.",
+    "question5": "Does Aliada replace my doctor?",
+    "answer5": "No. Aliada informs you, supports you and helps you prepare for consultations, but diagnosis and treatment belong to your health professional. In an emergency, go to a medical service.",
     "question6": "What happens if my payment fails?",
     "answer6": "Nothing is charged. You can retry from your dashboard or write to us at support."
   },
   "CTA": {
-    "title": "Ready to talk to an AI without filters?",
-    "description": "Create your free account, try it and unlock Premium or VIP with PayPhone.",
-    "button_text": "Get started"
+    "title": "Is there a question you don't dare to ask?",
+    "description": "Create your free account and ask it here, privately and without judgment.",
+    "button_text": "Talk in Private"
   },
   "Footer": {
     "product": "Features",
@@ -153,22 +147,22 @@
   },
   "SignIn": {
     "meta_title": "Sign in",
-    "meta_description": "Sign in to your Brujo IA account."
+    "meta_description": "Sign in to your Aliada AI account."
   },
   "SignUp": {
     "meta_title": "Sign up",
-    "meta_description": "Create your Brujo IA account."
+    "meta_description": "Create your Aliada AI account."
   },
   "DashboardLayout": {
-    "meta_title": "Brujo IA Dashboard",
-    "meta_description": "Your private, uncensored AI generator.",
-    "home": "Generator",
+    "meta_title": "Aliada AI Dashboard",
+    "meta_description": "Your private, confidential space at Aliada AI.",
+    "home": "Talk",
     "billing": "Billing",
     "settings": "Settings"
   },
   "DashboardIndexPage": {
-    "title_bar": "Generator",
-    "title_bar_description": "Text and images without restrictions, powered by the best private models",
+    "title_bar": "Your private space",
+    "title_bar_description": "Ask whatever you need: confidential, unfiltered and with a medical perspective",
     "paywall_pricing_link": "Compare plans",
     "payment_approved": "Payment approved. Your plan is active!",
     "payment_cancelled": "Payment cancelled. Nothing was charged.",
@@ -181,8 +175,8 @@
     "tab_text": "Text",
     "tab_image": "Image",
     "prompt_label": "Your prompt",
-    "prompt_placeholder_text": "Write anything: a story, a script, code, an uncomfortable question...",
-    "prompt_placeholder_image": "Describe the image you want to create...",
+    "prompt_placeholder_text": "Tell me your question in your own words: sexual health, hormones, identity, how you feel...",
+    "prompt_placeholder_image": "Describe the support image you need...",
     "generate": "Generate",
     "generating": "Generating...",
     "result_title": "Result",
