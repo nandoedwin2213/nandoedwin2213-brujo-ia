@@ -68,7 +68,7 @@
     "section_title": "A place where you can really ask",
     "section_description": "Designed by a physician so that no question about your body, your sexuality or your identity goes unanswered.",
     "feature1_title": "Zero Corporate Filters",
-    "feature1_description": "Our AI doesn't block questions about hormones, surgeries or sexual health. Built with the Venice API.",
+    "feature1_description": "Our AI doesn't block questions about hormones, surgeries or sexual health. Powered by the best private models, with no corporate filters.",
     "feature2_title": "Absolute Privacy",
     "feature2_description": "Your intimate conversations are never used to train algorithms or sold to third parties.",
     "feature3_title": "Discreet Subscription",
@@ -230,5 +230,131 @@
   },
   "PayPhoneCheckout": {
     "acknowledgement": "I understand that Aliada AI is an educational support tool and does not issue medical diagnoses. It does not replace consultation with a professional. I confirm that I am over 18 years old."
+  },
+  "Terms": {
+    "meta_title": "Terms of Service - Aliada AI",
+    "meta_description": "Aliada AI terms of use: an educational tool, not a medical service.",
+    "title": "Terms of Service",
+    "updated": "Last updated: September 2026",
+    "intro": "By creating an account or using Aliada AI (the \"Service\"), available at aliada.life, you agree to these terms. If you do not agree, do not use the Service.",
+    "contact": "Questions about these terms? Write to",
+    "sections": [
+      {
+        "title": "1. What Aliada AI is",
+        "body": [
+          "Aliada AI is an artificial-intelligence tool providing educational and informational support on intimate health, sexual health, gender transition, identity and emotional wellbeing.",
+          "Responses are generated automatically by language and image models. They may contain errors, inaccuracies or outdated information. Aliada AI does not individually review each response."
+        ]
+      },
+      {
+        "title": "2. Not a medical service",
+        "body": [
+          "Aliada AI does NOT provide medical services, does not issue diagnoses, does not prescribe treatments or doses and does not replace consultation with a healthcare professional. No doctor-patient relationship exists between you and Aliada AI, its founder or its team.",
+          "Any decision about hormones, medication, procedures or surgery must be discussed with and made by your endocrinologist or treating physician. In a medical emergency or emotional crisis, contact your country's emergency services or a helpline immediately.",
+          "You are solely responsible for how you use the information obtained through the Service."
+        ]
+      },
+      {
+        "title": "3. Age requirement",
+        "body": [
+          "The Service is exclusively for people aged 18 or older. By using it you confirm you meet that age. We may suspend accounts we reasonably believe belong to minors."
+        ]
+      },
+      {
+        "title": "4. Acceptable use",
+        "body": [
+          "You agree not to use the Service to generate sexual content involving minors, content depicting real people without their consent, content inciting violence, hatred or self-harm, or for any illegal activity.",
+          "Model providers may reject certain prompts. We reserve the right to suspend or terminate accounts that breach these rules, without refund."
+        ]
+      },
+      {
+        "title": "5. Plans, payments and quotas",
+        "body": [
+          "The Free plan includes a one-time trial quota. Premium and VIP plans are prepaid through PayPhone, grant access for 30 days and a monthly quota of images and text shown on the pricing page. There is no automatic renewal.",
+          "Payments are non-refundable once the plan is activated, except for a technical error attributable to us that completely prevents use of the Service.",
+          "Quotas may be adjusted to keep the Service sustainable; we will give reasonable notice."
+        ]
+      },
+      {
+        "title": "6. Generated content",
+        "body": [
+          "You are responsible for the prompts you submit and for how you use generated content. To the extent permitted by law, content you generate is yours. We do not guarantee its originality or fitness for a particular purpose."
+        ]
+      },
+      {
+        "title": "7. Limitation of liability",
+        "body": [
+          "The Service is provided \"as is\". To the maximum extent permitted by law, Aliada AI, its founder and collaborators shall not be liable for direct or indirect damages arising from the use of, or inability to use, the Service, nor for health decisions made based on its content.",
+          "In any event, total liability is limited to the amount you paid in the last 30 days."
+        ]
+      },
+      {
+        "title": "8. Changes and governing law",
+        "body": [
+          "We may update these terms; the current version will always be published on this page. These terms are governed by the laws of the Republic of Ecuador."
+        ]
+      }
+    ]
+  },
+  "Privacy": {
+    "meta_title": "Privacy Policy - Aliada AI",
+    "meta_description": "What data Aliada AI processes, why, and how we protect it.",
+    "title": "Privacy Policy",
+    "updated": "Last updated: September 2026",
+    "intro": "Your privacy is the foundation of Aliada AI. Here we explain clearly what data we process, why, and how you can exercise your rights.",
+    "contact": "To exercise your rights or ask privacy questions, write to",
+    "sections": [
+      {
+        "title": "1. Data we process",
+        "body": [
+          "Account: the email address and name you register when signing in; managed by our authentication provider (Clerk).",
+          "Payments: transaction ID, plan, amount and payment status processed by PayPhone. We never see or store your card details.",
+          "Usage: counters of images and tokens consumed per period to enforce your plan's quotas.",
+          "Prompts and responses: sent to our AI model provider to generate the response and shown on your screen. We currently do not store a history of your conversations or images in our database."
+        ]
+      },
+      {
+        "title": "2. Why we use it",
+        "body": [
+          "To provide the Service, manage your subscription, enforce quotas and prevent abuse. We do not use your conversations to train models, we do not build advertising profiles and we do not sell your data to third parties."
+        ]
+      },
+      {
+        "title": "3. Providers",
+        "body": [
+          "We use providers that process data on our behalf: Clerk (authentication), PayPhone (payments), Vercel (hosting), Neon (database) and an AI inference provider with a no-prompt-retention policy. Each is bound by its own privacy terms and by our instructions."
+        ]
+      },
+      {
+        "title": "4. Sensitive data",
+        "body": [
+          "When using Aliada AI you may share information about your health, sexual orientation or gender identity. We process that information solely to generate the response you request. We recommend not including real names, documents or data that could identify you or third parties in your prompts."
+        ]
+      },
+      {
+        "title": "5. Retention",
+        "body": [
+          "Account, payment and usage data are kept while your account is active and for as long as required to meet legal and accounting obligations. You can request deletion of your account at any time."
+        ]
+      },
+      {
+        "title": "6. Your rights",
+        "body": [
+          "You may access, rectify, delete your data and object to its processing under Ecuador's Organic Law on Personal Data Protection and applicable regulations. We will respond within 15 days."
+        ]
+      },
+      {
+        "title": "7. Security",
+        "body": [
+          "All communication is encrypted (HTTPS). Database access is restricted and credentials are managed securely. No system is infallible; if we detect a breach affecting you, we will notify you."
+        ]
+      },
+      {
+        "title": "8. Changes",
+        "body": [
+          "We may update this policy; the current version will always be published on this page with its update date."
+        ]
+      }
+    ]
   }
 }
