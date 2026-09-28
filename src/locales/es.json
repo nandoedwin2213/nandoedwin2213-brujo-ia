@@ -68,7 +68,7 @@
     "section_title": "Un lugar donde puedes preguntar de verdad",
     "section_description": "Diseñada por un médico para que ninguna duda sobre tu cuerpo, tu sexualidad o tu identidad se quede sin respuesta.",
     "feature1_title": "Cero Filtros Corporativos",
-    "feature1_description": "Nuestra IA no bloquea preguntas sobre hormonas, cirugías o salud sexual. Desarrollado con Venice API.",
+    "feature1_description": "Nuestra IA no bloquea preguntas sobre hormonas, cirugías o salud sexual. Trabajamos con los mejores modelos privados, sin filtros corporativos.",
     "feature2_title": "Privacidad Absoluta",
     "feature2_description": "Tus conversaciones íntimas jamás se usan para entrenar algoritmos ni se venden a terceros.",
     "feature3_title": "Suscripción Discreta",
@@ -230,5 +230,131 @@
   },
   "PayPhoneCheckout": {
     "acknowledgement": "Entiendo que Aliada AI es una herramienta de apoyo educativo y no emite diagnósticos médicos. No reemplaza la consulta con un profesional. Confirmo que soy mayor de 18 años."
+  },
+  "Terms": {
+    "meta_title": "Términos de servicio - Aliada AI",
+    "meta_description": "Condiciones de uso de Aliada AI: herramienta educativa, no servicio médico.",
+    "title": "Términos de servicio",
+    "updated": "Última actualización: septiembre de 2026",
+    "intro": "Al crear una cuenta o usar Aliada AI (el \"Servicio\"), disponible en aliada.life, aceptas estos términos. Si no estás de acuerdo, no uses el Servicio.",
+    "contact": "¿Dudas sobre estos términos? Escríbenos a",
+    "sections": [
+      {
+        "title": "1. Qué es Aliada AI",
+        "body": [
+          "Aliada AI es una herramienta de inteligencia artificial de apoyo educativo e informativo sobre salud íntima, salud sexual, transición de género, identidad y bienestar emocional.",
+          "Las respuestas son generadas automáticamente por modelos de lenguaje e imagen. Pueden contener errores, imprecisiones o información desactualizada. Aliada AI no revisa individualmente cada respuesta."
+        ]
+      },
+      {
+        "title": "2. No es un servicio médico",
+        "body": [
+          "Aliada AI NO presta servicios médicos, no emite diagnósticos, no prescribe tratamientos ni dosis y no sustituye la consulta con un profesional de la salud. No existe relación médico-paciente entre tú y Aliada AI ni con su fundador o su equipo.",
+          "Cualquier decisión sobre hormonas, medicamentos, procedimientos o cirugías debe consultarse y tomarse con tu endocrinólogo o médico tratante. Ante una urgencia médica o una crisis emocional, contacta de inmediato a los servicios de emergencia de tu país o a una línea de ayuda.",
+          "Eres el único responsable del uso que hagas de la información obtenida en el Servicio."
+        ]
+      },
+      {
+        "title": "3. Requisitos de edad",
+        "body": [
+          "El Servicio es exclusivamente para personas mayores de 18 años. Al usarlo declaras que cumples esa edad. Podemos suspender cuentas si tenemos motivos razonables para creer que pertenecen a menores."
+        ]
+      },
+      {
+        "title": "4. Uso aceptable",
+        "body": [
+          "Te comprometes a no usar el Servicio para generar contenido sexual que involucre a menores, contenido que represente a personas reales sin su consentimiento, contenido que incite a la violencia, al odio o a la autolesión, ni para actividades ilegales.",
+          "Los proveedores de modelos pueden rechazar ciertos prompts. Nos reservamos el derecho de suspender o cancelar cuentas que infrinjan estas normas, sin reembolso."
+        ]
+      },
+      {
+        "title": "5. Planes, pagos y cuotas",
+        "body": [
+          "El plan Gratis incluye una cuota única de prueba. Los planes Premium y VIP se pagan por adelantado mediante PayPhone, otorgan acceso por 30 días y una cuota mensual de imágenes y texto indicada en la página de precios. No hay renovación automática.",
+          "Los pagos no son reembolsables una vez activado el plan, salvo error técnico imputable a nosotros que impida totalmente el uso del Servicio.",
+          "Las cuotas pueden ajustarse para garantizar la sostenibilidad del Servicio; te informaremos con antelación razonable."
+        ]
+      },
+      {
+        "title": "6. Contenido generado",
+        "body": [
+          "Eres responsable de los prompts que envías y del uso que des al contenido generado. En la medida en que la ley lo permita, el contenido que generes es tuyo. No garantizamos su originalidad ni su aptitud para un fin concreto."
+        ]
+      },
+      {
+        "title": "7. Limitación de responsabilidad",
+        "body": [
+          "El Servicio se ofrece \"tal cual\". En la máxima medida permitida por la ley, Aliada AI, su fundador y colaboradores no serán responsables por daños directos o indirectos derivados del uso o la imposibilidad de uso del Servicio, ni por decisiones de salud tomadas con base en su contenido.",
+          "En cualquier caso, la responsabilidad total quedará limitada al importe pagado por ti en los últimos 30 días."
+        ]
+      },
+      {
+        "title": "8. Cambios y legislación",
+        "body": [
+          "Podemos actualizar estos términos; la versión vigente estará siempre publicada en esta página. Estos términos se rigen por las leyes de la República del Ecuador."
+        ]
+      }
+    ]
+  },
+  "Privacy": {
+    "meta_title": "Política de privacidad - Aliada AI",
+    "meta_description": "Qué datos trata Aliada AI, para qué y cómo los protegemos.",
+    "title": "Política de privacidad",
+    "updated": "Última actualización: septiembre de 2026",
+    "intro": "Tu privacidad es la base de Aliada AI. Aquí explicamos con claridad qué datos tratamos, por qué y cómo puedes ejercer tus derechos.",
+    "contact": "Para ejercer tus derechos o resolver dudas de privacidad escribe a",
+    "sections": [
+      {
+        "title": "1. Datos que tratamos",
+        "body": [
+          "Cuenta: correo electrónico y nombre que registras al iniciar sesión; los gestiona nuestro proveedor de autenticación (Clerk).",
+          "Pagos: identificador de transacción, plan, importe y estado del pago procesados por PayPhone. Nunca vemos ni almacenamos los datos de tu tarjeta.",
+          "Uso: contadores de imágenes y tokens consumidos por periodo para aplicar las cuotas de tu plan.",
+          "Prompts y respuestas: se envían a nuestro proveedor de modelos de IA para generar la respuesta y se muestran en tu pantalla. Actualmente no guardamos un historial de tus conversaciones ni imágenes en nuestra base de datos."
+        ]
+      },
+      {
+        "title": "2. Para qué los usamos",
+        "body": [
+          "Para prestarte el Servicio, gestionar tu suscripción, aplicar cuotas y prevenir abusos. No usamos tus conversaciones para entrenar modelos, no elaboramos perfiles con fines publicitarios y no vendemos tus datos a terceros."
+        ]
+      },
+      {
+        "title": "3. Proveedores",
+        "body": [
+          "Utilizamos proveedores que tratan datos en nuestro nombre: Clerk (autenticación), PayPhone (pagos), Vercel (alojamiento), Neon (base de datos) y un proveedor de inferencia de IA con política de no retención de prompts. Cada uno está sujeto a sus propias condiciones de privacidad y a nuestras instrucciones."
+        ]
+      },
+      {
+        "title": "4. Datos sensibles",
+        "body": [
+          "Al usar Aliada AI puedes compartir información relacionada con tu salud, orientación sexual o identidad de género. Tratamos esa información únicamente para generar la respuesta que solicitas. Te recomendamos no incluir en tus prompts nombres reales, documentos ni datos que permitan identificarte o identificar a terceros."
+        ]
+      },
+      {
+        "title": "5. Conservación",
+        "body": [
+          "Los datos de cuenta, pagos y uso se conservan mientras tu cuenta esté activa y el tiempo necesario para cumplir obligaciones legales y contables. Puedes solicitar la eliminación de tu cuenta en cualquier momento."
+        ]
+      },
+      {
+        "title": "6. Tus derechos",
+        "body": [
+          "Puedes acceder, rectificar, eliminar tus datos y oponerte a su tratamiento, conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador y normas aplicables. Responderemos en un plazo máximo de 15 días."
+        ]
+      },
+      {
+        "title": "7. Seguridad",
+        "body": [
+          "Toda la comunicación viaja cifrada (HTTPS). El acceso a la base de datos está restringido y las credenciales se gestionan de forma segura. Ningún sistema es infalible; si detectamos una brecha que te afecte, te lo notificaremos."
+        ]
+      },
+      {
+        "title": "8. Cambios",
+        "body": [
+          "Podemos actualizar esta política; la versión vigente estará siempre publicada en esta página con su fecha de actualización."
+        ]
+      }
+    ]
   }
 }

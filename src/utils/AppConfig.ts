@@ -25,7 +25,7 @@ export const AppConfig = {
     localePrefix,
   },
   email: {
-    support: 'soporte@aliada.ai',
+    support: 'soporte@aliada.life',
   },
 } as const;
 
