@@ -11,6 +11,7 @@ export const PayPhoneButton = (props: {
   plan: PaidPlanName;
   className?: string;
   variant?: 'default' | 'outline';
+  disabled?: boolean;
 }) => {
   const t = useTranslations('PayPhoneButton');
   const tPlans = useTranslations('PricingPlans');
@@ -45,7 +46,7 @@ export const PayPhoneButton = (props: {
       <button
         type="button"
         onClick={startCheckout}
-        disabled={loading}
+        disabled={loading || props.disabled}
         className={cn(buttonVariants({ size: 'lg', variant: props.variant ?? 'default' }), `
           w-full
         `)}

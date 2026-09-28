@@ -2,7 +2,7 @@ import { auth } from '@clerk/nextjs/server';
 import { desc, eq } from 'drizzle-orm';
 import { getFormatter, getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
-import { PayPhoneButton } from '@/features/billing/PayPhoneButton';
+import { PayPhoneCheckout } from '@/features/billing/PayPhoneCheckout';
 import { TitleBar } from '@/features/dashboard/TitleBar';
 import { db } from '@/libs/DB';
 import { getUserSubscription } from '@/libs/Subscription';
@@ -48,14 +48,7 @@ export default async function BillingPage(props: {
                 days: PremiumPlan.durationDays,
               })}
         </p>
-        <div className="
-          mt-5 flex flex-col gap-3
-          sm:flex-row
-        "
-        >
-          <PayPhoneButton plan="premium" className="sm:w-64" />
-          <PayPhoneButton plan="vip" variant="outline" className="sm:w-64" />
-        </div>
+        <PayPhoneCheckout />
       </div>
 
       <div className="mt-8">
