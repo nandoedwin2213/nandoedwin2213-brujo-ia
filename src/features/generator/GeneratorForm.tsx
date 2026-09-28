@@ -13,6 +13,8 @@ type ApiResponse = {
   usage?: UsageSummary;
 };
 
+const SUGGESTION_KEYS = ['1', '2', '3', '4', '5'] as const;
+
 const UsageBar = (props: { label: string; used: number; limit: number }) => {
   const percent = Math.min(100, Math.floor((props.used / props.limit) * 100));
 
@@ -143,6 +145,31 @@ export const GeneratorForm = (props: { usage: UsageSummary }) => {
         </button>
 
         {error && <p className="mt-3 text-sm text-destructive">{error}</p>}
+
+        <div className="mt-5">
+          <div className="text-xs font-semibold text-muted-foreground uppercase">
+            {type === 'text' ? t('suggestions_title_text') : t('suggestions_title_image')}
+          </div>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {SUGGESTION_KEYS.map(key => (
+              <button
+                key={key}
+                type="button"
+                onClick={() => setPrompt(t(`suggestion_${type}_${key}`))}
+                className="
+                  rounded-full border border-border bg-secondary px-3 py-1
+                  text-left text-xs text-secondary-foreground transition-colors
+                  hover:bg-accent
+                "
+              >
+                {t(`suggestion_${type}_${key}`)}
+              </button>
+            ))}
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground">
+            {type === 'text' ? t('suggestions_hint_text') : t('suggestions_hint_image')}
+          </p>
+        </div>
 
         <div className="mt-5 grid gap-3 border-t border-border pt-4">
           <div className="text-xs font-semibold text-muted-foreground uppercase">
