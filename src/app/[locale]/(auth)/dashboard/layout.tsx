@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
+import { currentUser } from '@clerk/nextjs/server';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { DashboardHeader } from '@/features/dashboard/DashboardHeader';
+import { isAdminEmail } from '@/libs/AdminStats';
 
 type DashboardLayoutProps = {
   params: Promise<{ locale: string }>;
@@ -28,6 +30,8 @@ export default async function DashboardLayout(props: DashboardLayoutProps) {
     locale,
     namespace: 'DashboardLayout',
   });
+  const user = await currentUser();
+  const isAdmin = isAdminEmail(user?.primaryEmailAddress?.emailAddress);
 
   return (
     <>
@@ -50,6 +54,7 @@ export default async function DashboardLayout(props: DashboardLayoutProps) {
                 href: '/dashboard/user-profile',
                 label: t('settings'),
               },
+              ...(isAdmin ? [{ href: '/dashboard/admin', label: t('admin') }] : []),
             ]}
           />
         </div>
