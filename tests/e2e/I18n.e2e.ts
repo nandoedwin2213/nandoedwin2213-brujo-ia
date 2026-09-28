@@ -5,12 +5,12 @@ test.describe('I18n', () => {
     test('should switch language from Spanish to English using dropdown and verify text on the homepage', async ({ page }) => {
       await page.goto('/');
 
-      await expect(page.getByText('Sin filtros, sin censura, sin excusas')).toBeVisible();
+      await expect(page.getByText('Una compañera de Inteligencia Artificial sin prejuicios')).toBeVisible();
 
       await page.getByRole('button', { name: 'Cambiar idioma' }).click();
       await page.getByText('English').click();
 
-      await expect(page.getByText('No filters, no censorship, no excuses')).toBeVisible();
+      await expect(page.getByText('A judgment-free, unfiltered and 100% confidential AI companion')).toBeVisible();
     });
 
     test('should switch language from Spanish to English using URL and verify text on the sign-in page', async ({ page }) => {
