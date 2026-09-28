@@ -28,7 +28,7 @@ export const HowItWorks = () => {
             >
               <div className="
                 flex size-10 items-center justify-center rounded-full
-                bg-linear-to-br from-indigo-400 via-purple-400 to-pink-400
+                bg-linear-to-br from-rose-300 via-fuchsia-300 to-violet-400
                 text-lg font-bold text-white
               "
               >

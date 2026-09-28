@@ -1,13 +1,13 @@
 {
   "Index": {
-    "meta_title": "Brujo IA - Inteligencia artificial sin restricciones ni censura",
-    "meta_description": "Brujo IA es una plataforma de IA sin restricciones ni censura: genera texto e imágenes con total libertad. Paga localmente con PayPhone."
+    "meta_title": "Aliada AI - Tu espacio seguro para dudas íntimas y de identidad",
+    "meta_description": "Aliada AI es una compañera de IA sin prejuicios, sin filtros y 100% confidencial para tus preguntas sobre salud sexual, transición y bienestar emocional. Creada con visión médica."
   },
   "Navbar": {
     "sign_in": "Iniciar sesión",
     "sign_up": "Registrarse",
-    "use_cases": "Usos",
-    "product": "Funciones",
+    "use_cases": "¿Para quién?",
+    "product": "Por qué Aliada",
     "pricing": "Precios",
     "faq": "Preguntas",
     "dashboard": "Panel"
@@ -16,87 +16,81 @@
     "button_label": "Cambiar idioma"
   },
   "Hero": {
-    "banner": "Generación de texto e imágenes sin censura",
-    "title": "La <important>IA sin límites</important>. Sin filtros, sin censura, sin excusas.",
-    "description": "Brujo IA te da acceso privado a modelos de IA sin censura para escribir, crear imágenes y explorar cualquier idea, sin que un filtro corporativo decida qué puedes preguntar. Paga con PayPhone en segundos.",
-    "primary_button": "Crear cuenta gratis",
-    "secondary_button": "Ver precios"
+    "banner": "Creado con visión médica · Confidencial",
+    "title": "Tu espacio seguro para <important>dudas íntimas y de identidad</important>.",
+    "description": "Una compañera de Inteligencia Artificial sin prejuicios, sin filtros y 100% confidencial. Haz las preguntas sobre tu salud, sexualidad o transición que no te atreves a hacer en público. Creado con visión médica.",
+    "primary_button": "Hablar en Privado",
+    "secondary_button": "Ver planes"
   },
   "UseCases": {
-    "section_subtitle": "¿Para qué sirve Brujo IA?",
-    "section_title": "Una IA para lo que otras no se atreven",
-    "section_description": "Ideas reales de uso. Escribe lo que quieras, tan explícito o atrevido como necesites: Brujo responde sin juzgar.",
-    "couples_title": "Parejas y novios",
-    "couples_description": "Mensajes picantes, cartas de amor, juegos y fantasías personalizadas para sorprender a tu pareja. Imágenes de fantasía de los dos como protagonistas.",
-    "couples_example": "“Escríbele a mi novia un mensaje atrevido para esta noche, con nuestro estilo de bromas internas…”",
-    "creators_title": "Creadores de contenido adulto",
-    "creators_description": "Guiones, captions, ideas de sets y arte para OnlyFans, Fansly o Telegram. Genera imágenes sin filtro para portadas y promos.",
-    "creators_example": "“Dame 10 captions provocativos para mi post de hoy y una imagen de portada estilo boudoir.”",
-    "friends_title": "Amigos y amigas",
-    "friends_description": "Roasts, bromas pesadas, memes personalizados, despedidas de soltero/a y chistes sin corrección política para el grupo.",
-    "friends_example": "“Hazle un roast brutal a mi amigo Carlos que siempre llega tarde y presume su moto.”",
-    "roleplay_title": "Roleplay y compañía",
-    "roleplay_description": "Conversaciones inmersivas con personajes que recuerdan el contexto y no rompen el rol. Novia/novio virtual, aventuras o historias interactivas.",
-    "roleplay_example": "“Eres una vampira misteriosa en un bar de Quito y yo acabo de entrar…”",
-    "writers_title": "Escritores y ficción",
-    "writers_description": "Novela romántica, erótica, terror o thriller sin negativas. Escenas explícitas, villanos reales y diálogos crudos cuando la historia lo pide.",
-    "writers_example": "“Continúa el capítulo 3: la escena de reencuentro, intensa y sin censura.”",
-    "marketing_title": "Negocios sin filtros",
-    "marketing_description": "Copys agresivos, anuncios para sex shops, bares, tabaco o apuestas y contenido que otras IAs se niegan a escribir.",
-    "marketing_example": "“Escribe 5 anuncios de Instagram para mi sex shop con humor y doble sentido.”"
+    "section_subtitle": "¿Para quién es Aliada?",
+    "section_title": "Preguntas que merecen una respuesta sin juicios",
+    "section_description": "Escribe con tus palabras, sin miedo a la reacción de nadie. Aliada responde con calma, información clara y respeto.",
+    "couples_title": "Transición y terapia hormonal",
+    "couples_description": "Dudas sobre hormonas, efectos esperados, tiempos, seguimiento y cómo hablarlo con tu médico o tu familia.",
+    "couples_example": "“Empecé estrógenos hace 3 meses. ¿Qué cambios son normales y cuáles debería consultar?”",
+    "creators_title": "Salud sexual",
+    "creators_description": "ITS, PrEP y PEP, anticoncepción, prácticas seguras, síntomas y cuándo acudir a una consulta, explicado sin vergüenza.",
+    "creators_example": "“Tuve una relación sin protección hace 2 días. ¿Qué opciones tengo y qué tan urgente es?”",
+    "friends_title": "Identidad y orientación",
+    "friends_description": "Un lugar para ordenar lo que sientes, entender términos y prepararte para conversaciones difíciles a tu ritmo.",
+    "friends_example": "“Creo que soy no binarie pero no sé cómo decírselo a mis padres. ¿Por dónde empiezo?”",
+    "roleplay_title": "Bienestar emocional",
+    "roleplay_description": "Ansiedad, disforia, rechazo familiar o soledad: acompañamiento empático y recursos, sin sustituir a un profesional.",
+    "roleplay_example": "“Hoy la disforia me está pegando fuerte. Necesito hablar con alguien que no me juzgue.”",
+    "writers_title": "Cirugías y procedimientos",
+    "writers_description": "Qué implican, preparación, recuperación y preguntas clave para tu equipo médico antes de decidir.",
+    "writers_example": "“¿Qué debo preguntar en mi primera consulta para una mastectomía de afirmación de género?”",
+    "marketing_title": "Familias y aliados",
+    "marketing_description": "Para madres, padres, parejas y amigos que quieren acompañar mejor y no saben cómo preguntar.",
+    "marketing_example": "“Mi hijo me dijo que es trans. Quiero apoyarlo bien: ¿qué debo saber y qué evitar?”"
   },
   "HowItWorks": {
     "section_subtitle": "Cómo funciona",
-    "section_title": "Listo en menos de 2 minutos",
-    "section_description": "Sin tarjetas internacionales ni configuraciones. Regístrate, paga con PayPhone y empieza a generar.",
+    "section_title": "Empieza a hablar en menos de 2 minutos",
+    "section_description": "Sin tarjetas internacionales ni configuraciones. Crea tu cuenta, prueba gratis y paga con PayPhone cuando quieras más.",
     "step1_title": "Crea tu cuenta",
-    "step1_description": "Regístrate con tu correo o Google. Es gratis y toma 30 segundos.",
+    "step1_description": "Regístrate con tu correo o Google. Es gratis, toma 30 segundos y nadie más verá tu actividad.",
     "step2_title": "Prueba gratis o activa un plan",
-    "step2_description": "Tu cuenta nueva incluye una prueba gratis (3 imágenes y 10 textos). Cuando quieras más, paga Premium ($19) o VIP ($39) con PayPhone y tu plan queda activo al instante por 30 días.",
-    "step3_title": "Elige Texto o Imagen",
-    "step3_description": "En el panel selecciona la pestaña Texto para escribir o Imagen para generar arte en alta resolución.",
-    "step4_title": "Escribe tu prompt y genera",
-    "step4_description": "Describe lo que quieres con detalle y pulsa Generar. Verás tu consumo del mes en las barras del panel.",
-    "tips_title": "Consejos para mejores resultados",
-    "tip1": "Sé específico: menciona tono, longitud, personajes y contexto (“mensaje corto, tono juguetón, para mi esposa”).",
-    "tip2": "Para imágenes describe estilo, iluminación y encuadre (“foto realista, luz cálida, primer plano”).",
-    "tip3": "Si el resultado no te convence, pide cambios concretos en un nuevo prompt: “más explícito”, “más corto”, “en verso”.",
-    "tip4": "Premium incluye 500 imágenes y 2 millones de tokens al mes; VIP triplica la cuota (1.500 imágenes y 6 millones de tokens)."
+    "step2_description": "Tu cuenta nueva incluye una prueba gratis. Cuando quieras más, paga Premium ($19) o VIP ($39) con PayPhone y tu plan queda activo al instante por 30 días.",
+    "step3_title": "Elige Conversación o Imagen",
+    "step3_description": "En el panel selecciona Texto para conversar o Imagen si necesitas material visual de apoyo.",
+    "step4_title": "Pregunta con tus palabras",
+    "step4_description": "Cuéntale tu situación con detalle y pulsa Generar. Verás tu consumo en las barras del panel.",
+    "tips_title": "Consejos para una mejor conversación",
+    "tip1": "Da contexto: edad, tiempo desde que empezaste un tratamiento, síntomas y desde cuándo.",
+    "tip2": "Pregunta lo que no te atreves en consulta: aquí nadie te juzga ni te interrumpe.",
+    "tip3": "Si la respuesta no te queda clara, pide que te lo explique más simple o con ejemplos.",
+    "tip4": "Aliada informa y acompaña, pero no reemplaza a tu médico. Ante una urgencia, acude a un servicio de salud."
   },
   "Features": {
-    "section_subtitle": "Funciones",
-    "section_title": "Todo lo que una IA debería dejarte hacer",
-    "section_description": "Impulsado por los mejores modelos privados y sin censura del mercado. Tus prompts no se almacenan ni se usan para entrenar.",
-    "feature1_title": "Texto sin censura",
-    "feature1_description": "Escribe historias, guiones, copys o código sin negativas ni sermones. El modelo responde lo que le pides.",
-    "feature2_title": "Imágenes sin restricciones",
-    "feature2_description": "Genera imágenes en alta resolución a partir de cualquier prompt, sin marca de agua ni filtro de contenido.",
-    "feature3_title": "Privacidad real",
-    "feature3_description": "Tus prompts y resultados se procesan de forma privada y nunca se usan para entrenar modelos.",
-    "feature4_title": "Paga con PayPhone",
-    "feature4_description": "No necesitas tarjetas internacionales. Paga en USD con PayPhone, la pasarela de pagos local.",
-    "feature5_title": "Acceso inmediato",
-    "feature5_description": "Tu plan se activa en el instante en que PayPhone confirma el pago. Sin esperas.",
-    "feature6_title": "Sin suscripciones que te atrapen",
-    "feature6_description": "Un pago, 30 días de acceso. Renueva cuando quieras, nada se cobra automáticamente."
+    "section_subtitle": "Por qué Aliada",
+    "section_title": "Un lugar donde puedes preguntar de verdad",
+    "section_description": "Diseñada por un médico para que ninguna duda sobre tu cuerpo, tu sexualidad o tu identidad se quede sin respuesta.",
+    "feature1_title": "Cero Filtros Corporativos",
+    "feature1_description": "Nuestra IA no bloquea preguntas sobre hormonas, cirugías o salud sexual. Desarrollado con Venice API.",
+    "feature2_title": "Privacidad Absoluta",
+    "feature2_description": "Tus conversaciones íntimas jamás se usan para entrenar algoritmos ni se venden a terceros.",
+    "feature3_title": "Suscripción Discreta",
+    "feature3_description": "Pagos seguros y locales mediante PayPhone para tu tranquilidad."
   },
   "Pricing": {
     "section_subtitle": "Precios",
-    "section_title": "Empieza gratis, crece cuando quieras",
-    "section_description": "Prueba sin pagar. Cuando te enganches, elige Premium o VIP y paga localmente con PayPhone.",
+    "section_title": "Empieza gratis, sigue cuando lo necesites",
+    "section_description": "Prueba sin pagar. Cuando quieras acompañamiento continuo, elige Premium o VIP y paga localmente con PayPhone.",
     "button_free": "Crear cuenta gratis",
     "button_premium": "Activar Premium",
     "button_vip": "Activar VIP"
   },
   "PricingPage": {
-    "meta_title": "Precios - Brujo IA",
-    "meta_description": "Prueba Brujo IA gratis y desbloquea Premium o VIP por 30 días con un solo pago en PayPhone."
+    "meta_title": "Precios - Aliada AI",
+    "meta_description": "Prueba Aliada AI gratis y desbloquea Premium o VIP por 30 días con un solo pago en PayPhone."
   },
   "PricingPlans": {
     "free_plan_name": "Gratis",
     "free_feature_1": "3 imágenes de prueba",
     "free_feature_2": "~10 textos de prueba (20.000 tokens)",
-    "free_feature_3": "Sin censura desde el primer prompt",
+    "free_feature_3": "Sin juicios desde la primera pregunta",
     "free_feature_4": "Sin tarjeta, una sola vez por cuenta",
     "premium_plan_name": "Premium",
     "premium_feature_1": "500 imágenes al mes",
@@ -107,12 +101,12 @@
     "vip_feature_1": "1.500 imágenes al mes",
     "vip_feature_2": "6 millones de tokens de texto al mes",
     "vip_feature_3": "Hasta 20 imágenes por minuto y cola prioritaria",
-    "vip_feature_4": "Acceso anticipado a nuevas funciones (chat con personajes, edición de imágenes, voz)"
+    "vip_feature_4": "Acceso anticipado a nuevas funciones (chat con memoria, voz)"
   },
   "PricingCard": {
     "free_plan_description": "Para probar sin compromiso",
-    "premium_plan_description": "Para uso diario",
-    "vip_plan_description": "Para los más intensos",
+    "premium_plan_description": "Para acompañamiento continuo",
+    "vip_plan_description": "Para quienes lo usan a diario",
     "most_popular": "Más popular",
     "plan_price": "${price}",
     "plan_interval_days": "/ {days} días",
@@ -124,23 +118,23 @@
     "error": "No pudimos iniciar el pago. Inténtalo de nuevo."
   },
   "FAQ": {
-    "question1": "¿Brujo IA realmente no tiene censura?",
-    "answer1": "Sí. Trabajamos con los mejores modelos privados sin censura, con los filtros de seguridad desactivados. El modelo responde lo que le pides, sin un filtro corporativo en medio.",
+    "question1": "¿Aliada realmente responde sin filtros?",
+    "answer1": "Sí. Usamos modelos sin censura corporativa, así que puedes preguntar sobre hormonas, cirugías, prácticas sexuales o identidad y recibir información clara y respetuosa.",
     "question2": "¿Cómo pago?",
     "answer2": "Con PayPhone, usando tu saldo PayPhone o cualquier tarjeta. Premium cuesta $19 y VIP $39; ambos duran 30 días. Antes puedes probar gratis.",
     "question3": "¿Se renueva automáticamente?",
     "answer3": "No. Nada se cobra automáticamente. Cuando terminen tus 30 días, tú decides si vuelves a pagar.",
-    "question4": "¿Se guardan mis prompts?",
-    "answer4": "Los prompts y resultados se procesan de forma privada y no se usan para entrenar ningún modelo.",
-    "question5": "¿Qué puedo generar?",
-    "answer5": "Texto de cualquier tipo (historias, guiones, código, copys) e imágenes en alta resolución a partir de una descripción.",
+    "question4": "¿Se guardan mis conversaciones?",
+    "answer4": "Tus conversaciones se procesan de forma privada, nunca se usan para entrenar modelos ni se venden a terceros.",
+    "question5": "¿Aliada reemplaza a mi médico?",
+    "answer5": "No. Aliada te informa, te acompaña y te ayuda a preparar tus consultas, pero el diagnóstico y el tratamiento son de tu profesional de salud. Ante una urgencia, acude a un servicio médico.",
     "question6": "¿Qué pasa si mi pago falla?",
     "answer6": "No se cobra nada. Puedes reintentar desde tu panel o escribirnos a soporte."
   },
   "CTA": {
-    "title": "¿Listo para hablar con una IA sin filtros?",
-    "description": "Crea tu cuenta gratis, pruébalo y desbloquea Premium o VIP con PayPhone.",
-    "button_text": "Empezar ahora"
+    "title": "¿Tienes una pregunta que no te atreves a hacer?",
+    "description": "Crea tu cuenta gratis y hazla aquí, en privado y sin juicios.",
+    "button_text": "Hablar en Privado"
   },
   "Footer": {
     "product": "Funciones",
@@ -153,22 +147,22 @@
   },
   "SignIn": {
     "meta_title": "Iniciar sesión",
-    "meta_description": "Inicia sesión en tu cuenta de Brujo IA."
+    "meta_description": "Inicia sesión en tu cuenta de Aliada AI."
   },
   "SignUp": {
     "meta_title": "Registrarse",
-    "meta_description": "Crea tu cuenta de Brujo IA."
+    "meta_description": "Crea tu cuenta de Aliada AI."
   },
   "DashboardLayout": {
-    "meta_title": "Panel de Brujo IA",
-    "meta_description": "Tu generador de IA privado y sin censura.",
-    "home": "Generador",
+    "meta_title": "Panel de Aliada AI",
+    "meta_description": "Tu espacio privado y confidencial en Aliada AI.",
+    "home": "Conversar",
     "billing": "Pagos",
     "settings": "Ajustes"
   },
   "DashboardIndexPage": {
-    "title_bar": "Generador",
-    "title_bar_description": "Texto e imágenes sin restricciones, con la potencia de los mejores modelos privados",
+    "title_bar": "Tu espacio privado",
+    "title_bar_description": "Pregunta lo que necesites: confidencial, sin filtros y con visión médica",
     "paywall_pricing_link": "Comparar planes",
     "payment_approved": "Pago aprobado. ¡Tu plan está activo!",
     "payment_cancelled": "Pago cancelado. No se cobró nada.",
@@ -181,8 +175,8 @@
     "tab_text": "Texto",
     "tab_image": "Imagen",
     "prompt_label": "Tu prompt",
-    "prompt_placeholder_text": "Escribe lo que quieras: una historia, un guion, código, una pregunta incómoda...",
-    "prompt_placeholder_image": "Describe la imagen que quieres crear...",
+    "prompt_placeholder_text": "Cuéntame tu duda con tus palabras: salud sexual, hormonas, identidad, cómo te sientes...",
+    "prompt_placeholder_image": "Describe la imagen de apoyo que necesitas...",
     "generate": "Generar",
     "generating": "Generando...",
     "result_title": "Resultado",

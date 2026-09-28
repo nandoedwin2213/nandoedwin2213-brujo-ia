@@ -18,14 +18,14 @@ const locales = [
 
 /** Centralized application configuration */
 export const AppConfig = {
-  name: 'Brujo IA',
+  name: 'Aliada AI',
   i18n: {
     locales,
     defaultLocale: 'es',
     localePrefix,
   },
   email: {
-    support: 'soporte@brujoia.com',
+    support: 'soporte@aliada.ai',
   },
 } as const;
 

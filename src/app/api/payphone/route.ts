@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     const prepared = await preparePayment({
       amountCents: pricing.priceCents,
       clientTransactionId,
-      reference: `Brujo IA ${plan.toUpperCase()} - ${pricing.durationDays} dias`,
+      reference: `Aliada AI ${plan.toUpperCase()} - ${pricing.durationDays} dias`,
       responseUrl: `${baseUrl}/api/payphone/response`,
       cancellationUrl: `${baseUrl}/api/payphone/response?cancelled=1`,
     });

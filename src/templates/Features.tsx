@@ -3,6 +3,20 @@ import { Background } from '@/components/Background';
 import { FeatureCard } from '@/features/landing/FeatureCard';
 import { Section } from '@/features/landing/Section';
 
+const FeatureIcon = (props: { children: React.ReactNode }) => (
+  <svg
+    className="stroke-primary-foreground stroke-2"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M0 0h24v24H0z" stroke="none" />
+    {props.children}
+  </svg>
+);
+
 export const Features = () => {
   const t = useTranslations('Features');
 
@@ -21,17 +35,9 @@ export const Features = () => {
         >
           <FeatureCard
             icon={(
-              <svg
-                className="stroke-primary-foreground stroke-2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M0 0h24v24H0z" stroke="none" />
-                <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3M12 12l8-4.5M12 12v9M12 12L4 7.5" />
-              </svg>
+              <FeatureIcon>
+                <path d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2M16 4h2a2 2 0 0 1 2 2v2M16 20h2a2 2 0 0 0 2-2v-2M8 12h8M12 8v8" />
+              </FeatureIcon>
             )}
             title={t('feature1_title')}
           >
@@ -40,17 +46,10 @@ export const Features = () => {
 
           <FeatureCard
             icon={(
-              <svg
-                className="stroke-primary-foreground stroke-2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M0 0h24v24H0z" stroke="none" />
-                <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3M12 12l8-4.5M12 12v9M12 12L4 7.5" />
-              </svg>
+              <FeatureIcon>
+                <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" />
+                <path d="M9 12l2 2 4-4" />
+              </FeatureIcon>
             )}
             title={t('feature2_title')}
           >
@@ -59,78 +58,13 @@ export const Features = () => {
 
           <FeatureCard
             icon={(
-              <svg
-                className="stroke-primary-foreground stroke-2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M0 0h24v24H0z" stroke="none" />
-                <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3M12 12l8-4.5M12 12v9M12 12L4 7.5" />
-              </svg>
+              <FeatureIcon>
+                <path d="M12 20.5l-7.5-7.6a4.6 4.6 0 0 1 6.5-6.5l1 1 1-1a4.6 4.6 0 0 1 6.5 6.5L12 20.5z" />
+              </FeatureIcon>
             )}
             title={t('feature3_title')}
           >
             {t('feature3_description')}
-          </FeatureCard>
-
-          <FeatureCard
-            icon={(
-              <svg
-                className="stroke-primary-foreground stroke-2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M0 0h24v24H0z" stroke="none" />
-                <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3M12 12l8-4.5M12 12v9M12 12L4 7.5" />
-              </svg>
-            )}
-            title={t('feature4_title')}
-          >
-            {t('feature4_description')}
-          </FeatureCard>
-
-          <FeatureCard
-            icon={(
-              <svg
-                className="stroke-primary-foreground stroke-2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M0 0h24v24H0z" stroke="none" />
-                <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3M12 12l8-4.5M12 12v9M12 12L4 7.5" />
-              </svg>
-            )}
-            title={t('feature5_title')}
-          >
-            {t('feature5_description')}
-          </FeatureCard>
-
-          <FeatureCard
-            icon={(
-              <svg
-                className="stroke-primary-foreground stroke-2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M0 0h24v24H0z" stroke="none" />
-                <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3M12 12l8-4.5M12 12v9M12 12L4 7.5" />
-              </svg>
-            )}
-            title={t('feature6_title')}
-          >
-            {t('feature6_description')}
           </FeatureCard>
         </div>
       </Section>
