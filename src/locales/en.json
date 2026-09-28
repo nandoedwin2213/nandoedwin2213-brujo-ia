@@ -185,6 +185,7 @@
     "error_generic": "Generation failed. Please try again.",
     "error_quota": "You've used up your monthly quota. It resets on the 1st of each month.",
     "error_rate_limit": "Too fast. Wait a minute and try again.",
+    "error_content_violation": "The image model refused this prompt under its content rules (e.g. copyrighted characters or minors). Rephrase it with an original, adult character.",
     "usage_images": "Images this month",
     "usage_tokens": "Text tokens this month",
     "usage_note": "Quota resets on the 1st of each month.",

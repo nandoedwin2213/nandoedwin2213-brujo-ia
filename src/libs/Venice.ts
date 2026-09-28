@@ -37,6 +37,14 @@ export const generateText = async (prompt: string): Promise<TextGeneration> => {
   return { content, tokens: data.usage?.total_tokens ?? 0 };
 };
 
+/** Thrown when Venice refuses the prompt and returns a blacked-out image. */
+export class ContentViolationError extends Error {
+  constructor() {
+    super('Venice flagged the prompt as a content violation');
+    this.name = 'ContentViolationError';
+  }
+}
+
 /** Returns a PNG data URL. */
 export const generateImage = async (prompt: string): Promise<string> => {
   const res = await fetch(`${VENICE_API}/image/generate`, {
@@ -56,6 +64,10 @@ export const generateImage = async (prompt: string): Promise<string> => {
 
   if (!res.ok) {
     throw new Error(`Venice image failed (${res.status}): ${await res.text()}`);
+  }
+
+  if (res.headers.get('x-venice-is-content-violation') === 'true') {
+    throw new ContentViolationError();
   }
 
   const data: { images?: string[] } = await res.json();

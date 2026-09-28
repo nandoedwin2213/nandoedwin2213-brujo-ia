@@ -5,7 +5,7 @@ import * as z from 'zod';
 import { logger } from '@/libs/Logger';
 import { getUserSubscription } from '@/libs/Subscription';
 import { checkUsage, getUsageSummary, recordGeneration } from '@/libs/Usage';
-import { generateImage, generateText } from '@/libs/Venice';
+import { ContentViolationError, generateImage, generateText } from '@/libs/Venice';
 
 const GenerateSchema = z.object({
   type: z.enum(['text', 'image']),
@@ -51,6 +51,10 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ type, result, usage: await getUsageSummary(userId, plan) });
   } catch (error) {
+    if (error instanceof ContentViolationError) {
+      return NextResponse.json({ error: 'content_violation' }, { status: 422 });
+    }
+
     logger.error(`Venice error: ${error instanceof Error ? error.message : String(error)}`);
 
     return NextResponse.json({ error: 'Generation failed' }, { status: 502 });

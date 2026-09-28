@@ -68,7 +68,9 @@ export const GeneratorForm = (props: { usage: UsageSummary }) => {
       }
 
       if (!res.ok || !data.result || !data.type) {
-        if (res.status === 429) {
+        if (data.error === 'content_violation') {
+          setError(t('error_content_violation'));
+        } else if (res.status === 429) {
           setError(t('error_rate_limit'));
         } else if (res.status === 402) {
           if (data.error === 'quota') {

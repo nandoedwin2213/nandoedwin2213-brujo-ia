@@ -185,6 +185,7 @@
     "error_generic": "La generación falló. Inténtalo de nuevo.",
     "error_quota": "Has agotado tu cuota mensual. Se renueva el día 1 de cada mes.",
     "error_rate_limit": "Vas demasiado rápido. Espera un minuto y vuelve a intentarlo.",
+    "error_content_violation": "El modelo de imagen rechazó este prompt por sus normas de contenido (por ejemplo, personajes con derechos de autor o menores). Reformúlalo con un personaje original y adulto.",
     "usage_images": "Imágenes este mes",
     "usage_tokens": "Tokens de texto este mes",
     "usage_note": "La cuota se renueva el día 1 de cada mes.",
