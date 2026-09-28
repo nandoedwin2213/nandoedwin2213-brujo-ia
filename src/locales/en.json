@@ -158,7 +158,8 @@
     "meta_description": "Your private, confidential space at Aliada AI.",
     "home": "Talk",
     "billing": "Billing",
-    "settings": "Settings"
+    "settings": "Settings",
+    "admin": "Admin"
   },
   "DashboardIndexPage": {
     "title_bar": "Your private space",
@@ -356,5 +357,20 @@
         ]
       }
     ]
+  },
+  "AdminPage": {
+    "title_bar": "Administration",
+    "title_bar_description": "AI provider balance and platform usage.",
+    "balance": "Provider balance (USD)",
+    "threshold": "Alert threshold",
+    "images_30d": "Images (30 days)",
+    "tokens_30d": "Text tokens (30 days)",
+    "revenue_30d": "Approved revenue (30 days)",
+    "active_plan": "Active subscriptions: {plan}",
+    "alert_low": "Balance below ${threshold}: top up soon so the service is not interrupted.",
+    "alert_ok": "Balance above ${threshold}. A daily alert is emailed to support if it drops below that threshold.",
+    "mail_configured": "Alert email configured (SMTP).",
+    "mail_missing": "Alert email not configured: set SMTP_HOST, SMTP_USER and SMTP_PASSWORD in Vercel.",
+    "recharge_link": "Top up provider balance"
   }
 }

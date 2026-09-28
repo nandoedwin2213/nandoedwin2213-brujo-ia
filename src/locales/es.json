@@ -158,7 +158,8 @@
     "meta_description": "Tu espacio privado y confidencial en Aliada AI.",
     "home": "Conversar",
     "billing": "Pagos",
-    "settings": "Ajustes"
+    "settings": "Ajustes",
+    "admin": "Admin"
   },
   "DashboardIndexPage": {
     "title_bar": "Tu espacio privado",
@@ -356,5 +357,20 @@
         ]
       }
     ]
+  },
+  "AdminPage": {
+    "title_bar": "Administración",
+    "title_bar_description": "Saldo del proveedor de IA y consumo de la plataforma.",
+    "balance": "Saldo del proveedor (USD)",
+    "threshold": "Umbral de alerta",
+    "images_30d": "Imágenes (30 días)",
+    "tokens_30d": "Tokens de texto (30 días)",
+    "revenue_30d": "Ingresos aprobados (30 días)",
+    "active_plan": "Suscripciones activas: {plan}",
+    "alert_low": "Saldo por debajo de ${threshold}: recarga cuanto antes para que el servicio no se interrumpa.",
+    "alert_ok": "Saldo por encima de ${threshold}. El aviso diario se envía a soporte si baja de ese umbral.",
+    "mail_configured": "Correo de alerta configurado (SMTP).",
+    "mail_missing": "Correo de alerta no configurado: define SMTP_HOST, SMTP_USER y SMTP_PASSWORD en Vercel.",
+    "recharge_link": "Recargar saldo del proveedor"
   }
 }
